@@ -75,10 +75,10 @@ set listchars=eol:¶,tab:..,trail:~		  		 	  " paramétrage des caractères non 
 
 "set udf = undo persistant "to test
 set ut=4200
-au cursorhold *.c update 						" save all c file if innactive for 42s 
-au cursorhold *.h update 						" save all h file if innactive for 42s 
-au cursorhold *.tex update 						" save all tex file if innactive for 42s 
-au cursorhold *.python update 					" save all tex file if innactive for 42s 
+"au cursorhold *.c update 						" save all c file if innactive for 42s 
+"au cursorhold *.h update 						" save all h file if innactive for 42s 
+"au cursorhold *.tex update 						" save all tex file if innactive for 42s 
+"au cursorhold *.python update 					" save all tex file if innactive for 42s 
 inoremap kj <Esc> 						" remap <Esc> on kj to escape insertion mod
 " back to the line beggining with the 
 noremap  <expr> <Home> (col('.') == matchend(getline('.'), '^\s*')+1 ? '0'  : '^')
@@ -145,4 +145,20 @@ map <silent> <S-F6> "<Esc>:silent setlocal spell! spelllang=fr<CR>"
 " Color for templates
 hi def link Todo TODO
 syn keyword Todo TODO FIXME XXX DEBUG
+
+vmap > >gv
+vmap < <gv
+
+set foldmethod=indent
+noremap <Tab> za
+noremap <S-Tab> zA
+
+" Disable arrows in normal mode
+noremap <up> <nop>
+noremap <down> <nop>
+noremap <left> <nop>
+noremap <right> <nop>
+
+set undofile
+set undodir=~/.vim/undodir
 
