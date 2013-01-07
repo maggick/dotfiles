@@ -1,0 +1,12 @@
+[color]
+        diff = auto
+        status = auto
+        branch = autoto
+[user]
+        name = maggick
+        email = keller.mdpa@gmail.com
+[alias]
+        ci = commit
+        co = checkout
+        st = status
+        br = branch
