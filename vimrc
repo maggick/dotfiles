@@ -1,7 +1,7 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""
 " File .vimrc of Matthieu Keller <keller.mdpa@gmail.com>
 " created the 23.06.2010
-" Last update : 15.10.2012
+" Last update : 07.01.2013
 " version 1.5
 " copyleft
 """"""""""""""""""""""""""""""""""""""""""""""""""""
@@ -71,14 +71,11 @@ set hlsearch                                      " surligne les résultats de l
 set ignorecase                                    " ne pas prendre en compte la casse pour les recherches
 set guifont=Courier\ New\ 11
 set nolist					  					  			  " on n'affiche pas les caractères non imprimables
-set listchars=eol:¶,tab:..,trail:~		  		 	  " paramétrage des caractères non imprimables au cas où l'on souhaiterait les afficher
+"set listchars=eol:¶,tab:..,trail:~		  		 	  " paramétrage des caractères non imprimables au cas où l'on souhaiterait les afficher
+set listchars=trail:·,nbsp:·,tab:▸\ ,extends:»,precedes:«,
 
-"set udf = undo persistant "to test
+"set udf = undo persistant 						"to test
 set ut=4200
-"au cursorhold *.c update 						" save all c file if innactive for 42s 
-"au cursorhold *.h update 						" save all h file if innactive for 42s 
-"au cursorhold *.tex update 						" save all tex file if innactive for 42s 
-"au cursorhold *.python update 					" save all tex file if innactive for 42s 
 inoremap kj <Esc> 						" remap <Esc> on kj to escape insertion mod
 " back to the line beggining with the 
 noremap  <expr> <Home> (col('.') == matchend(getline('.'), '^\s*')+1 ? '0'  : '^')
@@ -159,6 +156,7 @@ noremap <down> <nop>
 noremap <left> <nop>
 noremap <right> <nop>
 
+" undo file
 set undofile
 set undodir=~/.vim/undodir
 
