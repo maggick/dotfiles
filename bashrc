@@ -128,3 +128,5 @@ export EDITOR=vim
 export PATH=${PATH}:~/Documents/android-sdk-linux
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+source ~/Documents/dotfiles/liquidprompt
