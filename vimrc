@@ -62,12 +62,12 @@ set history=50                                    " historique de 50 commandes
 set ruler                                         " affiche la position courante au sein du fichier
 set showcmd        								  " Show (partial) command in status line.
 set shiftwidth=4                                  " nombre de tabulation pour l'indentation
-set tabstop=4					  				  			  " nombre d'espace pour une tabulation
+set tabstop=4		  				  			  " nombre d'espace pour une tabulation
 set showmatch                                     " vérification présence ([ ou { à la frappe de )] ou }
 set colorcolumn=+0
 set textwidth=80
 filetype plugin indent on                         " détection automatique du type de fichier
-autocmd FileType text setlocal textwidth=72       " les fichiers de type .txt sont limites à 72 caractères par ligne
+"autocmd FileType text setlocal textwidth=72       " les fichiers de type .txt sont limites à 72 caractères par ligne
 set fileformats=unix,mac,dos                      " gestion des retours chariot en fonction du type de fichier
 set foldcolumn=2                                  " repère visuel pour les folds
 let Tlist_Ctags_Cmd = '/usr/bin/ctags'      	  " implémentation de ctags, nécessaire pour le plug in 'taglist'
@@ -75,14 +75,12 @@ set incsearch                                     " recherche incrémentale
 set hlsearch                                      " surligne les résultats de la recherche
 set ignorecase                                    " ne pas prendre en compte la casse pour les recherches
 set guifont=Courier\ New\ 11
-"set nolist					  					  			  " on n'affiche pas les caractères non imprimables
 "set listchars=eol:¶,tab:..,trail:~		  		 	  " paramétrage des caractères non imprimables au cas où l'on souhaiterait les afficher
 set listchars=trail:·,nbsp:·,tab:▸\ ,extends:»,precedes:«,
 set list
 
-"set udf = undo persistant 						"to test
 set ut=4200
-inoremap kj <Esc> 						" remap <Esc> on kj to escape insertion mod
+inoremap kj <Esc> 				" remap <Esc> on kj to escape insertion mod
 " back to the line beggining with the 
 noremap  <expr> <Home> (col('.') == matchend(getline('.'), '^\s*')+1 ? '0'  : '^')
 imap <Home> <C-o><Home>
@@ -152,11 +150,13 @@ map <silent> <S-F6> "<Esc>:silent setlocal spell! spelllang=fr<CR>"
 hi def link Todo TODO
 syn keyword Todo TODO FIXME XXX DEBUG
 
+" load the arduino template for pde files
 autocmd! BufNewFile,BufRead *.pde setlocal ft=arduino
 
 vmap > >gv
 vmap < <gv
 
+" ste the fols method
 set foldmethod=indent
 noremap <Tab> za
 noremap <S-Tab> zA
