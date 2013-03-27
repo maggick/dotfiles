@@ -1,7 +1,7 @@
 [color]
         diff = auto
         status = auto
-        branch = autoto
+        branch = auto
 [user]
         name = maggick
         email = keller.mdpa@gmail.com
