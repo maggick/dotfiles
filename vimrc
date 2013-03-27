@@ -46,24 +46,25 @@ source $VIMRUNTIME/mswin.vim
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "Diverses options
 """"""""""""""""""""""""""""""""""""""""""""""""""
-set nocompatible                                  " désactivation de la compatibilité avec vi
-set background=dark                              " fond sombre
-colorscheme desert
-syntax enable                                     " activation de la coloration syntaxique
-filetype on													  " lit le type de fichier
-set mouse=a												     " Enable mouse usage (all modes)
+set nocompatible                   " désactivation de la compatibilité avec vi
+set background=dark                " fond sombre
+colorscheme desert                 " colorscheme desert
+syntax enable                      " activation de la coloration syntaxique
+filetype on                        " lit le type de fichier
+set mouse=a                        " Enable mouse usage (all modes)
 set showmatch
-set number                                      " numérotation des lignes
-set autoindent                                    " indentation automatique avancée
-set smartindent                                   " indentation plus intelligente
-set laststatus=2                                  " ajoute une barre de status
-set backspace=indent,eol,start                    " autorisation du retour arrière
-set history=50                                    " historique de 50 commandes
-set ruler                                         " affiche la position courante au sein du fichier
-set showcmd        								  " Show (partial) command in status line.
-set shiftwidth=4                                  " nombre de tabulation pour l'indentation
-set tabstop=4		  				  			  " nombre d'espace pour une tabulation
-set showmatch                                     " vérification présence ([ ou { à la frappe de )] ou }
+set number                         " numérotation des lignes
+set autoindent                     " indentation automatique avancée
+set smartindent                    " indentation plus intelligente
+set laststatus=2                   " ajoute une barre de status
+set backspace=indent,eol,start     " autorisation du retour arrière
+set history=50                     " historique de 50 commandes
+set ruler                          " affiche la position courante au sein du fichier
+set showcmd                        " Show (partial) command in status line.
+set shiftwidth=4                   " nombre de tabulation pour l'indentation
+set tabstop=4                      " nombre d'espace pour une tabulation
+set expandtab                      "replace tab with 4 spaces
+set showmatch                      " vérification présence ([ ou { à la frappe de )] ou }ll
 set colorcolumn=+0
 set textwidth=80
 filetype plugin indent on                         " détection automatique du type de fichier
