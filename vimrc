@@ -9,6 +9,7 @@
 set nocompatible          " be iMproved
 filetype off              " required!
 
+<<<<<<< HEAD
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "Diverses options
 """"""""""""""""""""""""""""""""""""""""""""""""""
@@ -88,9 +89,13 @@ map <silent> <S-F6> "<Esc>:silent setlocal spell! spelllang=fr<CR>"
 hi def link Todo TODO
 syn keyword Todo TODO FIXME XXX DEBUG
 
+" load the arduino template for pde files
+autocmd! BufNewFile,BufRead *.pde setlocal ft=arduino
+
 vmap > >gv
 vmap < <gv
 
+" ste the fols method
 set foldmethod=indent
 noremap <Tab> za
 noremap <S-Tab> zA
