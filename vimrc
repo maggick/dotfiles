@@ -9,30 +9,29 @@
 set nocompatible          " be iMproved
 filetype off              " required!
 
-<<<<<<< HEAD
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "Diverses options
 """"""""""""""""""""""""""""""""""""""""""""""""""
-set nocompatible                                  " désactivation de la compatibilité avec vi
-set background=dark                              " fond sombre
+set nocompatible                  " désactivation de la compatibilité avec vi
+set background=dark               " fond sombre
 colorscheme desert
-syntax enable                                     " activation de la coloration syntaxique
+syntax enable                     " activation de la coloration syntaxique
 filetype on
-set number                                      " numérotation des lignes
-set history=50                                    " historique de 50 commandes
-set ruler                                         " affiche la position courante au sein du fichier
-set showcmd       " Show (partial) command in status line.
-set shiftwidth=4                                  " nombre de tabulation pour l'indentation
-set tabstop=4  " nombre d'espace pour une tabulation
+set number                        " numérotation des lignes
+set history=50                    " historique de 50 commandes
+set ruler
+set showcmd                       " Show (partial) command in status line.
+set shiftwidth=4                  " nombre de tabulation pour l'indentation
+set tabstop=4                     " nombre d'espace pour une tabulation
 set softtabstop=4
-set showmatch                                     " vérification présence ([ ou { à la frappe de )] ou }
+set showmatch                     " vérification présence ([ ou { à la frappe de )] ou }
 set textwidth=80
 set colorcolumn=+0
-set fileformats=unix,mac,dos                      " gestion des retours chariot en fonction du type de fichier
-set foldcolumn=2                                  " repère visuel pour les folds
-set incsearch                                     " recherche incrémentale
-set hlsearch                                      " surligne les résultats de la recherche
-set ignorecase                                    " ne pas prendre en compte la casse pour les recherches
+set fileformats=unix,mac,dos      " gestion des retours chariot en fonction du type de fichier
+set foldcolumn=2                  " repère visuel pour les folds
+set incsearch                     " recherche incrémentale
+set hlsearch                      " surligne les résultats de la recherche
+set ignorecase                    " ne pas prendre en compte la casse pour les recherches
 set listchars=trail:·,nbsp:·,tab:▸\ ,extends:»,precedes:«,
 set list
 
@@ -75,9 +74,11 @@ command! Wroot :w !sudo tee % ":wroot save file has root
 "Liste des propositions par CTRL-X_s
 """"""""""""""""""""""""""""""""""""""""""""""""""
 set dictionary+=/usr/share/dict/american-english
-set spellsuggest=5                                   " on affiche uniquement les 5 premières propositions 
-autocmd BufEnter *.txt set spell                     " correction orthographique dans les fichiers textes
-autocmd BufEnter *.txt set spelllang=en              " correction orthographique dans les fichiers textes
+" on affiche uniquement les 5 premières propositions
+set spellsuggest=5
+" correction orthographique dans les fichiers textes
+autocmd BufEnter *.txt set spell
+autocmd BufEnter *.txt set spelllang=en
 
 map <silent> <F6> "<Esc>:silent setlocal spell! spelllang=en<CR>"
 map <silent> <S-F6> "<Esc>:silent setlocal spell! spelllang=fr<CR>"
