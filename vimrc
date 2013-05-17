@@ -1,8 +1,8 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""
 " File .vimrc of Matthieu Keller <keller.mdpa@gmail.com>
 " created the 23.06.2010
-" Last update : 07.01.2013
-" version 1.5
+" Last update : 17.05.2013
+" version 2.0
 " copyleft
 """"""""""""""""""""""""""""""""""""""""""""""""""""
 
