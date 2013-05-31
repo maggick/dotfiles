@@ -1,7 +1,7 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""""
 " File .vimrc of Matthieu Keller <keller.mdpa@gmail.com>
 " created the 23.06.2010
-" Last update : 17.05.2013
+" Last update : 31.05.2013
 " version 2.0
 " copyleft
 """"""""""""""""""""""""""""""""""""""""""""""""""""
@@ -34,10 +34,6 @@ set hlsearch                      " surligne les résultats de la recherche
 set ignorecase                    " ne pas prendre en compte la casse pour les recherches
 set listchars=trail:·,nbsp:·,tab:▸\ ,extends:»,precedes:«,
 set list
-
-" remap <Esc> on kj to escape insertion mod
-inoremap kj <Esc>
-imap <Home> <C-o><Home>
 
 " reopening a file
 if has("autocmd")
@@ -96,16 +92,19 @@ autocmd! BufNewFile,BufRead *.pde setlocal ft=arduino
 vmap > >gv
 vmap < <gv
 
+" REMAPPING
 " ste the fols method
 set foldmethod=indent
 noremap <Tab> za
 noremap <S-Tab> zA
-
 " Disable arrows in normal mode
 map <up> <nop>
 map <down> <nop>
 map <left> <nop>
 map <right> <nop>
+" remap <Esc> on kj to escape insertion mod
+inoremap kj <Esc>
+imap <Home> <C-o><Home>
 
 " undo file
 set undofile
