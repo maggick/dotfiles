@@ -23,7 +23,7 @@ set ruler
 set showcmd                       " Show (partial) command in status line.
 set shiftwidth=4                  " nombre de tabulation pour l'indentation
 set tabstop=4                     " nombre d'espace pour une tabulation
-set expendtab                     " use space instead of tab
+set expandtab                     " use space instead of tab
 set softtabstop=4
 set showmatch                     " vérification présence ([ ou { à la frappe de )] ou }
 set textwidth=80
