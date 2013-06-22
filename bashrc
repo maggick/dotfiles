@@ -5,8 +5,8 @@
 #########################################
 # File .bashrc of Matthieu Keller <keller.mdpa@gmail.com>
 # Created 23 june 2010
-# Last update : 15/10/2012
-# Version 1.3
+# Last update : 22 june 2013
+# Version 1.3.1
 #########################################
 
 
@@ -118,14 +118,24 @@ alias cp='cp -ip'
 alias mv='mv -i'
 alias rm='rm -I --preserve-root'
 
+
+# basic directory operations
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias -- -='cd -'
+
+# trick to define default arguments
+# (only works when commands are typed manually in a shell)
+alias less='less -F'
+alias tmux='tmux -2'
+
 ## Prompt
 #PS1='\[\033[1;31m\]\u\[\033[1;34m\]@\[\033[1;33m\]\h\[\033[1;34m\](\[\033[1;32m\]\w\[\033[1;34m\])\[\033[1;32m\]\$\[\033[00m\]:\[\033[00m\]'
 
 #define the default editor as vim
 export EDITOR=vim
-
-# for android development
-export PATH=${PATH}:~/Documents/android-sdk-linux
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
