@@ -1,10 +1,11 @@
-""""""""""""""""""""""""""""""""""""""""""""""""""""
-" File .vimrc of Matthieu Keller <keller.mdpa@gmail.com>
-" created the 23.06.2010
-" Last update : 31.05.2013
-" version 2.0
-" copyleft
-""""""""""""""""""""""""""""""""""""""""""""""""""""
+"|
+"| File     : ~/.vimrc
+"| Author   : Matthieu Keller
+"| Source   : https://github.com/maggick/dotFiles
+"| Licence  : WTFPL
+"| Created  : the 23 june 2010
+"| Updated  : the 31 may 2013
+"|
 
 set nocompatible          " be iMproved
 filetype off              " required!

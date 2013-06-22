@@ -1,11 +1,10 @@
 #|
-#| File : ~/.bashrc
-#| Author : Matthieu Keller
-#| Source : https://github.com/maggick/dotFiles
-#| Licence : WTFPL
-#| Created the 23 june 2010
-#| Last update 22 june 2013
-#| Version 1.3.1
+#| File     : ~/.bashrc
+#| Author   : Matthieu Keller
+#| Source   : https://github.com/maggick/dotFiles
+#| Licence  : WTFPL
+#| Created  : the 23 june 2010
+#| Update   : the 22 june 2013
 #|
 #| ~/.bashrc: executed by bash(1) for non-login shells.
 #| See /usr/share/doc/bash/examples/startup-files for examples
