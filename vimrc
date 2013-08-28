@@ -10,6 +10,9 @@
 set nocompatible          " be iMproved
 filetype off              " required!
 
+" Vundle and bundles configuration
+source bundles.vim
+
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "Diverses options
 """"""""""""""""""""""""""""""""""""""""""""""""""
