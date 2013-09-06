@@ -11,7 +11,7 @@ set nocompatible          " be iMproved
 "filetype off              " required!
 
 " Vundle and bundles configuration
-source neobundles.vim
+source ~/Documents/dotfiles/neobundles.vim
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "Diverses options
