@@ -1,1 +1,0 @@
-/home/matthieu/Documents/dotfiles/bundles.vim
