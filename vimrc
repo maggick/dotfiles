@@ -8,10 +8,10 @@
 "|
 
 set nocompatible          " be iMproved
-filetype off              " required!
+"filetype off              " required!
 
 " Vundle and bundles configuration
-source bundles.vim
+source neobundles.vim
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "Diverses options
