@@ -8,10 +8,10 @@
 "|
 
 set nocompatible          " be iMproved
-filetype off              " required!
+"filetype off              " required!
 
 " Vundle and bundles configuration
-source bundles.vim
+source ~/Documents/dotfiles/neobundles.vim
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "Diverses options
@@ -21,6 +21,7 @@ set background=dark               " fond sombre
 colorscheme desert
 syntax enable                     " activation de la coloration syntaxique
 filetype on
+set encoding=utf-8
 set number                        " numérotation des lignes
 set history=50                    " historique de 50 commandes
 set ruler
