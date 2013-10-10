@@ -39,6 +39,7 @@ NeoBundle 'Shougo/vimproc', {
 " " Non git repos
 " NeoBundle 'http://svn.macports.org/repository/macports/contrib/mpvim/'
 " NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
+NeoBundle 'https://bitbucket.org/sjl/gundo.vim/'
 
 
 filetype plugin indent on     " Required!
