@@ -116,5 +116,6 @@ imap <Home> <C-o><Home>
 set undofile
 set undodir=~/.vim/undodir
 
-set clipboard=unnamedplus " use the common clipboard as default register
+" use the common clipboard as default register
+set clipboard=unnamedplus
 
