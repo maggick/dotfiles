@@ -11,7 +11,10 @@ set nocompatible          " be iMproved
 "filetype off              " required!
 
 " Vundle and bundles configuration
-source ~/Documents/dotfiles/neobundles.vim
+source ~/dotfiles/neobundles.vim
+
+" cra.cim setup
+let g:NbRemainingCP = 0
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "Diverses options
