@@ -77,5 +77,11 @@ alias tmux='tmux -2'
 #define the default editor as vim
 export EDITOR=vim
 
+#open man pages with vim
+function man()
+{
+    vim -XMnR "+runtime! ftplugin/man.vim" "+Man $1" "+set nomodifiable" "+only"
+}
+
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
