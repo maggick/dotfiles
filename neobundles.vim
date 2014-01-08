@@ -41,8 +41,15 @@ NeoBundle 'Shougo/vimproc', {
 " NeoBundle 'https://bitbucket.org/ns9tks/vim-fuzzyfinder'
 "NeoBundle 'https://bitbucket.org/sjl/gundo.vim/'
 
+" ADOPTED PLUGIN
+" quick fixsigns (pan on the left with signs)
 NeoBundle 'tomtom/quickfixsigns_vim'
+
+" ON TEST PLUGINS
+" year calendar in order to organize holidays
 NeoBundle 'YannMoisan/cra.vim'
+NeoBundle 'Shougo/unite.vim'
+NeoBundle 'Shougo/neocomplcache.vim'
 
 filetype plugin indent on     " Required!
 "
