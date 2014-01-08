@@ -42,6 +42,7 @@ NeoBundle 'Shougo/vimproc', {
 "NeoBundle 'https://bitbucket.org/sjl/gundo.vim/'
 
 NeoBundle 'tomtom/quickfixsigns_vim'
+NeoBundle 'YannMoisan/cra.vim'
 
 filetype plugin indent on     " Required!
 "
