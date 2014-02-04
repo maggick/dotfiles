@@ -107,10 +107,16 @@ set foldmethod=indent
 noremap <Tab> za
 noremap <S-Tab> zA
 " Disable arrows in normal mode
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
+vnoremap <up> <nop>
+vnoremap <down> <nop>
+vnoremap <left> <nop>
+vnoremap <right> <nop>
+
+inoremap <up> <nop>
+inoremap <down> <nop>
+inoremap <left> <nop>
+inoremap <right> <nop>
+
 " remap <Esc> on kj to escape insertion mod
 inoremap kj <Esc>
 imap <Home> <C-o><Home>
