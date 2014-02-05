@@ -44,12 +44,17 @@ NeoBundle 'Shougo/vimproc', {
 " ADOPTED PLUGIN
 " quick fixsigns (pan on the left with signs)
 NeoBundle 'tomtom/quickfixsigns_vim'
+NeoBundle 'Shougo/unite.vim'
 
 " ON TEST PLUGINS
 " year calendar in order to organize holidays
 NeoBundle 'YannMoisan/cra.vim'
-NeoBundle 'Shougo/unite.vim'
+
 NeoBundle 'Shougo/neocomplcache.vim'
+
+" Undo tree manager
+NeoBundle 'sjl/gundo.vim'
+nnoremap <F5> :GundoToggle<CR>
 
 filetype plugin indent on     " Required!
 "
