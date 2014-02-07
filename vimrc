@@ -43,6 +43,7 @@ set hlsearch                      " surligne les résultats de la recherche
 set ignorecase                    " ne pas prendre en compte la casse pour les recherches
 set listchars=trail:·,nbsp:·,tab:▸\ ,extends:»,precedes:«,
 set list
+set laststatus=2
 
 " reopening a file
 if has("autocmd")
@@ -127,4 +128,8 @@ set undodir=~/.vim/undodir
 
 " use the common clipboard as default register
 set clipboard=unnamedplus
+
+if !has('gui_running')
+      set t_Co=256
+endif
 
