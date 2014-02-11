@@ -21,7 +21,6 @@ let g:NbRemainingCP = 0
 """"""""""""""""""""""""""""""""""""""""""""""""""
 set nocompatible                  " désactivation de la compatibilité avec vi
 set background=dark               " fond sombre
-colorscheme desert
 syntax enable                     " activation de la coloration syntaxique
 filetype on
 set encoding=utf-8
