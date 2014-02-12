@@ -1,7 +1,7 @@
 !|
 !| File : ~/.Xresources
-!| Author : Fabien Cazenave
-!| Source : https://github.com/fabi1cazenave/dotFiles
+!| Author : Matthieu Keller
+!| Source : https://github.com/maggick/dotFiles
 !| Licence : WTFPL
 !|
 !| Default X settings for XTerm & URxvt, apply with:
