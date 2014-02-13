@@ -19,14 +19,13 @@ let g:NbRemainingCP = 0
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "Diverses options
 """"""""""""""""""""""""""""""""""""""""""""""""""
-set nocompatible                  " désactivation de la compatibilité avec vi
 set background=dark               " fond sombre
-colorscheme desert
+colorscheme solarized
 syntax enable                     " activation de la coloration syntaxique
 filetype on
 set encoding=utf-8
 set number                        " numérotation des lignes
-set history=50                    " historique de 50 commandes
+set history=500                    " historique de 50 commandes
 set ruler
 set showcmd                       " Show (partial) command in status line.
 set shiftwidth=4                  " nombre de tabulation pour l'indentation
