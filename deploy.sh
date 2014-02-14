@@ -14,7 +14,7 @@ ln -s ~/dotfiles/gitconfig ~/.gitconfig
 rm ~/.inputrc
 ln -s ~/dotfiles/inputrc ~/.inputrc
 rm ~/.Xressources
-ln -s ~/dotfiles/Xressources ~/.Xressources
+ln -s ~/dotfiles/Xresources ~/.Xresources
 rm ~/.minttrc
 ln -s ~/dotfiles/minttrc ~/.minttrx
 mkdir -p ~/.urxvt/ext/
