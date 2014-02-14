@@ -24,7 +24,7 @@ Xft*dpi : 96
 ! preferred fonts: Inconsolata, Monaco, Monospace, Terminal, Terminus, Ubuntu…
 XTerm*renderFont : true
 XTerm*faceSize : 11
-XTerm*faceName : Inconsolata
+XTerm*faceName : SourceCodePro
 !XTerm*faceName : Ubuntumono
 
 ! let’s be 8bit-clean
@@ -53,7 +53,7 @@ URxvt*cursorBlink : true
 ! the “letterSpace” option is absolutely required to keep the text readable
 ! (problem: wide characters like ←→ might become unreadable… :-/)
 URxvt*letterSpace : -2
-URxvt*font : xft:Inconsolata:size=11
+URxvt*font : xft:SourceCodePro:size=11
 !URxvt*font : xft:Ubuntumono:size=11
 !URxvt*font : xft:Mensch:size=9
 
