@@ -16,7 +16,7 @@ ln -s ~/dotfiles/inputrc ~/.inputrc
 rm ~/.Xressources
 ln -s ~/dotfiles/Xresources ~/.Xresources
 rm ~/.minttrc
-ln -s ~/dotfiles/minttrc ~/.minttrx
+ln -s ~/dotfiles/minttyrc ~/.minttyrc
 mkdir -p ~/.urxvt/ext/
 ln -s ~/dotfiles/urxvt/ext/clipboard ~/.urxvt/ext/clipboard
 ln -s ~/dotfiles/urxvt/ext/font-size ~/.urxvt/ext/font-size
