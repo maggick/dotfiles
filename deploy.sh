@@ -15,6 +15,7 @@ rm ~/.inputrc
 ln -s ~/dotfiles/inputrc ~/.inputrc
 rm ~/.Xressources
 ln -s ~/dotfiles/Xresources ~/.Xresources
+ln -s ~/.Xresources ~/.Xdefaults
 rm ~/.minttrc
 ln -s ~/dotfiles/minttyrc ~/.minttyrc
 mkdir -p ~/.urxvt/ext/
