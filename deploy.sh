@@ -23,3 +23,6 @@ ln -s ~/dotfiles/urxvt/ext/clipboard ~/.urxvt/ext/clipboard
 ln -s ~/dotfiles/urxvt/ext/font-size ~/.urxvt/ext/font-size
 xkbcomp -w9 ~/dotfiles/lafayette.xkb $DISPLAY
 xrdb -load ~/.Xresources
+mkdir ~/.fonts/SourceCodePro
+cp ~/dotfiles/fonts/SourceCodePro/* ~/.fonts/SourceCodePro/
+ln -s ~/dotfiles/xinitrc ~/.xinitrc
