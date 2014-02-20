@@ -23,3 +23,7 @@ ln -s ~/dotfiles/urxvt/ext/clipboard ~/.urxvt/ext/clipboard
 ln -s ~/dotfiles/urxvt/ext/font-size ~/.urxvt/ext/font-size
 xkbcomp -w9 ~/dotfiles/lafayette.xkb $DISPLAY
 xrdb -load ~/.Xresources
+ln -s ~/dotfiles/xinitrc ~/.xinitrc
+mkdir ~/.i3
+ln -s ~/dotfiles/i3/config ~/.i3/config
+ln -s ~/dotfiles/i3/i3status ~/.i3/i3status
