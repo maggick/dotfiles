@@ -56,9 +56,9 @@ NeoBundle 'Shougo/neocomplcache.vim'
 NeoBundle 'sjl/gundo.vim'
 nnoremap <F5> :GundoToggle<CR>
 
-NeoBundle 'itchyny/lightline.vim'
+"NeoBundle 'itchyny/lightline.vim'
+NeoBundle 'bling/vim-airline'
 NeoBundle 'altercation/vim-colors-solarized'
-
 
 filetype plugin indent on     " Required!
 "
