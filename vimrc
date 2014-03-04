@@ -40,7 +40,7 @@ set foldcolumn=2                  " repère visuel pour les folds
 set incsearch                     " recherche incrémentale
 set hlsearch                      " surligne les résultats de la recherche
 set ignorecase                    " ne pas prendre en compte la casse pour les recherches
-set listchars=trail:·,nbsp:·,tab:▸\ ,extends:»,precedes:«,
+set listchars=trail:·,nbsp:¤,tab:▸\ ,extends:»,precedes:«,
 set list
 set laststatus=2
 
@@ -131,4 +131,7 @@ set clipboard=unnamedplus
 if !has('gui_running')
       set t_Co=256
 endif
+
+set wildmenu
+set wildmode=longest,full
 
