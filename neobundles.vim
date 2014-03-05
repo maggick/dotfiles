@@ -56,9 +56,15 @@ NeoBundle 'Shougo/neocomplcache.vim'
 NeoBundle 'sjl/gundo.vim'
 nnoremap <F5> :GundoToggle<CR>
 
-"NeoBundle 'itchyny/lightline.vim'
-NeoBundle 'bling/vim-airline'
 NeoBundle 'altercation/vim-colors-solarized'
+
+" air line plugin and a simple configuration in order to avoid patching font
+NeoBundle 'bling/vim-airline'
+" the separator used on the left side >
+let g:airline_left_sep=''
+" the separator used on the right side >
+let g:airline_right_sep=''
+
 
 filetype plugin indent on     " Required!
 "
