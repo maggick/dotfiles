@@ -36,6 +36,25 @@ XTerm*eightBitOutput : true
 XTerm*fullscreen : never
 XTerm*omitTranslation : fullscreen
 
+!| UXTerm >> all VTE-based terminals <<<
+!|=============================================================================
+
+! preferred fonts: Inconsolata, Monaco, Monospace, Terminal, Terminus, Ubuntu…
+UXTerm*renderFont : true
+UXTerm*faceSize : 11
+UXTerm*faceName : Inconsolata
+
+! let’s be 8bit-clean
+UXTerm*utf8 : 1
+UXTerm*eightBitInput : false
+UXTerm*eightBitControl : false
+UXTerm*eightBitOutput : true
+
+! disable fullscreen on <Alt-Return>
+UXTerm*fullscreen : never
+UXTerm*omitTranslation : fullscreen
+
+
 !>>>
 
 !| URxvt über alles <<<
