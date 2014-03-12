@@ -13,17 +13,23 @@ rm ~/.gitconfig
 ln -s ~/dotfiles/gitconfig ~/.gitconfig
 rm ~/.inputrc
 ln -s ~/dotfiles/inputrc ~/.inputrc
-rm ~/.Xressources
+rm ~/.Xresources
 ln -s ~/dotfiles/Xresources ~/.Xresources
+rm ~/.Xdefaults
 ln -s ~/.Xresources ~/.Xdefaults
 rm ~/.minttyrc
 ln -s ~/dotfiles/minttyrc ~/.minttyrc
 mkdir -p ~/.urxvt/ext/
+rm ~/.urxvt/ext/clipboard
+rm ~/.urxvt/ext/font-size
 ln -s ~/dotfiles/urxvt/ext/clipboard ~/.urxvt/ext/clipboard
 ln -s ~/dotfiles/urxvt/ext/font-size ~/.urxvt/ext/font-size
 xkbcomp -w9 ~/dotfiles/lafayette.xkb $DISPLAY
 xrdb -load ~/.Xresources
+rm ~/.xinitrc
 ln -s ~/dotfiles/xinitrc ~/.xinitrc
 mkdir ~/.i3
+rm ~/.i3/config
+rm ~/.i3/i3status
 ln -s ~/dotfiles/i3/config ~/.i3/config
 ln -s ~/dotfiles/i3/i3status ~/.i3/i3status
