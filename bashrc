@@ -74,6 +74,9 @@ alias -- -='cd -'
 alias less='less -F'
 alias tmux='tmux -2'
 
+# alias for my layout
+alias lafayette='xkbcomp -w9 ~/dotfiles/lafayette.xkb $DISPLAY'
+
 #define the default editor as vim
 export EDITOR=vim
 
