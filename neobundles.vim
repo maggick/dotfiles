@@ -46,7 +46,16 @@ NeoBundle 'Shougo/vimproc', {
 NeoBundle 'tomtom/quickfixsigns_vim'
 NeoBundle 'Shougo/unite.vim'
 
-" ON TEST PLUGINS
+" air line plugin and a simple configuration in order to avoid patching font
+NeoBundle 'bling/vim-airline'
+" the separator used on the left side >
+let g:airline_left_sep=''
+" the separator used on the right side >
+let g:airline_right_sep=''
+
+NeoBundle 'altercation/vim-colors-solarized'
+
+" ON TEST PLUGINS
 " year calendar in order to organize holidays
 NeoBundle 'YannMoisan/cra.vim'
 
@@ -55,16 +64,6 @@ NeoBundle 'Shougo/neocomplcache.vim'
 " Undo tree manager
 NeoBundle 'sjl/gundo.vim'
 nnoremap <F5> :GundoToggle<CR>
-
-NeoBundle 'altercation/vim-colors-solarized'
-
-" air line plugin and a simple configuration in order to avoid patching font
-NeoBundle 'bling/vim-airline'
-" the separator used on the left side >
-let g:airline_left_sep=''
-" the separator used on the right side >
-let g:airline_right_sep=''
-
 
 filetype plugin indent on     " Required!
 "
