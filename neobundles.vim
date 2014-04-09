@@ -65,6 +65,9 @@ NeoBundle 'Shougo/neocomplcache.vim'
 NeoBundle 'sjl/gundo.vim'
 nnoremap <F5> :GundoToggle<CR>
 
+" Git wrapper
+NeoBundle 'tpope/vim-fugitive'
+
 filetype plugin indent on     " Required!
 "
 " Brief help
