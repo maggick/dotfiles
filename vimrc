@@ -41,6 +41,7 @@ set incsearch                     " recherche incrémentale
 set hlsearch                      " surligne les résultats de la recherche
 set ignorecase                    " ne pas prendre en compte la casse pour les recherches
 set listchars=trail:·,nbsp:¤,tab:▸\ ,extends:»,precedes:«,
+
 set list
 set laststatus=2
 
