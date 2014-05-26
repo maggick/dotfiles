@@ -59,7 +59,7 @@ NeoBundle 'altercation/vim-colors-solarized'
 " year calendar in order to organize holidays
 NeoBundle 'YannMoisan/cra.vim'
 
-NeoBundle 'Shougo/neocomplcache.vim'
+NeoBundle 'Shougo/neocomplete.vim'
 
 " Undo tree manager
 NeoBundle 'sjl/gundo.vim'

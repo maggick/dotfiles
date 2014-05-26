@@ -35,3 +35,8 @@ ln -s ~/dotfiles/i3/config ~/.i3/config
 ln -s ~/dotfiles/i3/i3status ~/.i3/i3status
 mkdir ~/.weechat
 ln -s ~/dotfiles/weechat/weechat.conf ~/.weechat/weechat.conf
+ranger --copy-config=all
+rm ~/.config/ranger/colorschemes/solarized.py
+rm ~/.config/ranger/rc.conf
+ln -s  ~/dotfiles/config/ranger/colorschemes/solarized.py ~/.config/ranger/colorschemes/solarized.py
+ln -s  ~/dotfiles/config/ranger/rc.conf ~/.config/ranger/rc.conf
