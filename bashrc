@@ -4,7 +4,7 @@
 #| Source   : https://github.com/maggick/dotFiles
 #| Licence  : WTFPL
 #| Created  : the 23 june 2010
-#| Update   : the 22 june 2013
+#| Update   : the 10 june 2014
 #|
 #| ~/.bashrc: executed by bash(1) for non-login shells.
 #| See /usr/share/doc/bash/examples/startup-files for examples
@@ -20,15 +20,15 @@ if [ -f /etc/bash_completion ]; then
     . /etc/bash_completion
 fi
 
-## History configuration
-# don't put duplicate lines in the history. See bash(1) for more options
-# ... or force ignoredups and ignorespace
+# History configuration
+# don't put duplicate lines in the history. See bash(1) for more options  or
+# force ignoredups and ignorespace
 HISTCONTROL=ignoredups:ignorespace
 # append to the history file, don't overwrite it
 shopt -s histappend
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-HISTSIZE=1000
-HISTFILESIZE=2000
+HISTSIZE=10000
+HISTFILESIZE=20000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -37,10 +37,7 @@ shopt -s checkwinsize
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
-#| Alias <<<
-#|=============================================================================
-
-## Alias Listing
+# Alias Listing
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
@@ -56,18 +53,16 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-## Alias security
+# Alias security
 alias cp='cp -ip'
 alias mv='mv -i'
 alias rm='rm -I --preserve-root'
 
-
-# basic directory operations
+# Alias basic directory operations
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 alias .....='cd ../../../..'
-alias -- -='cd -'
 
 # trick to define default arguments
 # (only works when commands are typed manually in a shell)
@@ -77,9 +72,6 @@ alias tmux='tmux -2'
 # alias for my layout
 alias lafayette='xkbcomp -w9 ~/dotfiles/lafayette.xkb $DISPLAY'
 
-#define the default editor as vim
-export EDITOR=vim
-
 #open man pages with vim
 function man()
 {
@@ -87,5 +79,9 @@ function man()
 }
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+#define the default editor as vim
+export EDITOR=vim
+# term, be beautiful!
 export TERM=xterm-256color
 
