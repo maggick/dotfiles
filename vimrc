@@ -111,16 +111,6 @@ vmap < <gv
 set foldmethod=indent
 noremap <Tab> za
 noremap <S-Tab> zA
-" Disable arrows in normal mode
-vnoremap <up> <nop>
-vnoremap <down> <nop>
-vnoremap <left> <nop>
-vnoremap <right> <nop>
-
-inoremap <up> <nop>
-inoremap <down> <nop>
-inoremap <left> <nop>
-inoremap <right> <nop>
 
 " remap <Esc> on kj to escape insertion mod
 inoremap kj <Esc>
@@ -139,4 +129,8 @@ endif
 
 set wildmenu
 set wildmode=longest,full
+if exists ("&wildignorecase")
+  set wildignorecase
+endif
+set showfulltag
 
