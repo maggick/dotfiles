@@ -1,3 +1,12 @@
+"|
+"| File     : ~/dotfiles/neobundle.vim
+"| Author   : Matthieu Keller
+"| Source   : https://github.com/maggick/dotFiles
+"| Licence  : WTFPL
+"| Created  : the 6 september 2013
+"| Updated  : the 10 june 2014
+"|
+
 if has('vim_starting')
     set runtimepath+=~/.vim/bundle/neobundle.vim/
 endif
