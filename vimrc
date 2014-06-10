@@ -16,37 +16,36 @@ source ~/dotfiles/neobundles.vim
 let g:NbRemainingCP = 0
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
-"Diverses options
+"Misc
 """"""""""""""""""""""""""""""""""""""""""""""""""
-set background=dark               " fond sombre
+set background=dark               " dark background
 colorscheme solarized
-syntax enable                     " activation de la coloration syntaxique
+syntax enable                     " syntax color
 filetype on
 set encoding=utf-8
-set number                        " numérotation des lignes
-set history=500                    " historique de 50 commandes
+set number                        " lines numerotation
+set history=500                   " 500 commands history
 set ruler
-set showcmd                       " Show (partial) command in status line.
-set shiftwidth=2                  " nombre de tabulation pour l'indentation
-set tabstop=2                     " nombre d'espace pour une tabulation
-set expandtab                     " use space instead of tab
-set softtabstop=2
 set showmatch                     " vérification présence ([ ou { à la frappe de )] ou }
 set textwidth=80
 set colorcolumn=+0
 set nowrap                        " in order to get beautiful line
 set linebreak
-set fileformats=unix,mac,dos      " gestion des retours chariot en fonction du type de fichier
-set foldcolumn=2                  " repère visuel pour les folds
-set incsearch                     " recherche incrémentale
-set hlsearch                      " surligne les résultats de la recherche
-set ignorecase                    " ne pas prendre en compte la casse pour les recherches
+set fileformats=unix,mac,dos
+set foldcolumn=2
+set incsearch
+set hlsearch
+set ignorecase
 set listchars=trail:·,nbsp:¤,tab:▸\ ,extends:»,precedes:«,
-
-autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
-
 set list
 set laststatus=2
+
+" Identation 2 tabs but for python then 4 tabs
+set shiftwidth=2
+set tabstop=2
+set expandtab
+set softtabstop=2
+autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
 
 " reopening a file
 if has("autocmd")
@@ -76,19 +75,17 @@ function! Ranger()
 endfunction
 noremap <silent> <Esc>e :call Ranger()<CR>
 
+" in order to save with a sudo
 command! Wroot :w !sudo tee % ":wroot save file has root
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
-"Correction orthographique
-"Liste des propositions par CTRL-X_s
+"Spell correction
+"complet with CTRL-X_s
 """"""""""""""""""""""""""""""""""""""""""""""""""
 set dictionary+=/usr/share/dict/american-english
-" on affiche uniquement les 5 premières propositions
-set spellsuggest=5
-" correction orthographique dans les fichiers textes
-autocmd BufEnter *.txt set spell
-autocmd BufEnter *.txt set spelllang=en
+set spellsuggest=5            " only display the fivest proposal
 
+" key to activat spell correction
 map <silent> <F6> "<Esc>:silent setlocal spell! spelllang=en<CR>"
 map <silent> <S-F6> "<Esc>:silent setlocal spell! spelllang=fr<CR>"
 
@@ -122,10 +119,12 @@ set undodir=~/.vim/undodir
 " use the common clipboard as default register
 set clipboard=unnamedplus
 
+" be beautiful!
 if !has('gui_running')
       set t_Co=256
 endif
 
+" have a beautiful menu!
 set wildmenu
 set wildmode=longest,full
 if exists ("&wildignorecase")
