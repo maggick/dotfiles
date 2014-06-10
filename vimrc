@@ -4,13 +4,12 @@
 "| Source   : https://github.com/maggick/dotFiles
 "| Licence  : WTFPL
 "| Created  : the 23 june 2010
-"| Updated  : the 31 may 2013
+"| Updated  : the 10 june 2014
 "|
 
 set nocompatible          " be iMproved
-"filetype off              " required!
 
-" Vundle and bundles configuration
+" neobundle configuration
 source ~/dotfiles/neobundles.vim
 
 " cra.cim setup
