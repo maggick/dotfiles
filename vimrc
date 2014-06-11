@@ -26,7 +26,7 @@ set encoding=utf-8
 set number                        " lines numerotation
 set history=500                   " 500 commands history
 set ruler
-set showmatch                     " vérification présence ([ ou { à la frappe de )] ou }
+set showmatch
 set textwidth=80
 set colorcolumn=+0
 set nowrap                        " in order to get beautiful line
