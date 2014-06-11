@@ -58,12 +58,6 @@ alias cp='cp -ip'
 alias mv='mv -i'
 alias rm='rm -I --preserve-root'
 
-# Alias basic directory operations
-alias ..='cd ..'
-alias ...='cd ../..'
-alias ....='cd ../../..'
-alias .....='cd ../../../..'
-
 # trick to define default arguments
 # (only works when commands are typed manually in a shell)
 alias less='less -F'
