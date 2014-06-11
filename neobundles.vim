@@ -73,6 +73,8 @@ NeoBundle 'Shougo/neocomplete.vim'
 " Plugin: source outliner
 NeoBundle 'h1mesuke/unite-outline'
 
+NeoBundle 'scrooloose/syntastic'
+
 " Undo tree manager
 NeoBundle 'sjl/gundo.vim'
 nnoremap <F5> :GundoToggle<CR>
