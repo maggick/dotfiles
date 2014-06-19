@@ -79,15 +79,21 @@ noremap <silent> <Esc>e :call Ranger()<CR>
 command! Wroot :w !sudo tee % ":wroot save file has root
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
-"Spell correction
-"complet with CTRL-X_s
-""""""""""""""""""""""""""""""""""""""""""""""""""
-set dictionary+=/usr/share/dict/american-english
-set spellsuggest=5            " only display the fivest proposal
+"Spell correction with vim7
+"based on http://www.cs.swarthmore.edu/help/vim/vim7.html
+if has("spell")
+  " turn spelling on by default
+  set spell
 
-" key to activat spell correction
-map <silent> <F6> "<Esc>:silent setlocal spell! spelllang=en<CR>"
-map <silent> <S-F6> "<Esc>:silent setlocal spell! spelllang=fr<CR>"
+ " toggle spelling with F4 key
+  map <F4> :set spell!<CR><Bar>:echo "Spell Check: " .  strpart("OffOn", 3 * &spell, 3)<CR>
+
+  " they were using white on white
+  highlight PmenuSel ctermfg=black ctermbg=lightgray
+
+  " limit it to just the top 10 items
+  set sps=best,10
+endif
 
 """"""""""""""""""""""""""""""""""""""""""""""""""
 "Templates
