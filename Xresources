@@ -70,6 +70,7 @@ URxvt*cursorBlink : true
 ! proper font rendering:
 ! the “letterSpace” option is absolutely required to keep the text readable
 ! (problem: wide characters like ←→ might become unreadable… :-/)
+URxvt*letterSpace : -2
 URxvt*font : xft:Inconsolata:size=11
 
 ! reclaim <Alt-s> and <Ctrl-Shift-*> shortcuts
