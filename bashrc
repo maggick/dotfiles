@@ -77,5 +77,5 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 #define the default editor as vim
 export EDITOR=vim
 # term, be beautiful!
-export TERM=xterm-256color
+#export TERM=xterm-256color
 
