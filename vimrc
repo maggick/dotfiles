@@ -124,7 +124,7 @@ set undofile
 set undodir=~/.vim/undodir
 
 " use the common clipboard as default register
-set clipboard=unnamedplus
+"set clipboard=unnamedplus
 
 " be beautiful!
 if !has('gui_running')
