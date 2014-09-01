@@ -89,5 +89,7 @@ filetype plugin indent on     " Required!
 " :NeoBundleInstall(!)    - install(update) bundles
 " :NeoBundleClean(!)      - confirm(or auto-approve) removal of unused bundles
 
+NeoBundle 'tpope/vim-surround'
+
 " Installation check.
 NeoBundleCheck
