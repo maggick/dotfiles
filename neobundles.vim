@@ -54,6 +54,7 @@ NeoBundle 'Shougo/vimproc', {
 " quick fixsigns (pan on the left with signs)
 NeoBundle 'tomtom/quickfixsigns_vim'
 NeoBundle 'Shougo/unite.vim'
+NeoBundle 'tpope/vim-surround'
 
 " air line plugin and a simple configuration in order to avoid patching font
 NeoBundle 'bling/vim-airline'
@@ -69,6 +70,8 @@ NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'YannMoisan/cra.vim'
 
 NeoBundle 'Shougo/neocomplete.vim'
+
+NeoBundle 'godlygeek/tabular'
 
 " Plugin: source outliner
 NeoBundle 'h1mesuke/unite-outline'
@@ -88,8 +91,6 @@ filetype plugin indent on     " Required!
 " :NeoBundleList          - list configured bundles
 " :NeoBundleInstall(!)    - install(update) bundles
 " :NeoBundleClean(!)      - confirm(or auto-approve) removal of unused bundles
-
-NeoBundle 'tpope/vim-surround'
 
 " Installation check.
 NeoBundleCheck
