@@ -73,6 +73,8 @@ NeoBundle 'Shougo/neocomplete.vim'
 
 NeoBundle 'godlygeek/tabular'
 
+NeoBundle 'PotatoesMaster/i3-vim-syntax'
+
 " Plugin: source outliner
 NeoBundle 'h1mesuke/unite-outline'
 
