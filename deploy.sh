@@ -40,7 +40,7 @@ mkdir ~/.i3
 rm ~/.i3/config
 rm ~/.i3/i3status
 ln -s ~/dotfiles/i3/config ~/.i3/config
-ln -s ~/dotfiles/i3/i3status ~/.i3/i3status
+ln -s ~/dotfiles/i3/i3status ~/.i3status.conf
 mkdir ~/.weechat
 ln -s ~/dotfiles/weechat/weechat.conf ~/.weechat/weechat.conf
 ranger --copy-config=all
