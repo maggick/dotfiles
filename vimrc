@@ -105,6 +105,8 @@ syn keyword Todo TODO FIXME XXX DEBUG
 
 " load the arduino template for pde files
 autocmd! BufNewFile,BufRead *.pde setlocal ft=arduino
+" load the md file as markdown
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 vmap > >gv
 vmap < <gv
