@@ -80,6 +80,8 @@ NeoBundle 'h1mesuke/unite-outline'
 
 NeoBundle 'scrooloose/syntastic'
 
+NeoBundle 'davidhalter/jedi-vim'
+
 " Undo tree manager
 NeoBundle 'sjl/gundo.vim'
 nnoremap <F5> :GundoToggle<CR>
