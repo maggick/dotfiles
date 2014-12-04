@@ -108,6 +108,12 @@ autocmd! BufNewFile,BufRead *.pde setlocal ft=arduino
 " load the md file as markdown
 autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
+augroup indents
+  autocmd FileType ?akefile set noexpandtab
+  autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab
+  autocmd FileType html,xhtml,javascript,css,c,cpp,python setlocal foldmethod=indent
+augroup END
+
 vmap > >gv
 vmap < <gv
 
