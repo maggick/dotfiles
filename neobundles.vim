@@ -78,8 +78,12 @@ NeoBundle 'PotatoesMaster/i3-vim-syntax'
 " Plugin: source outliner
 NeoBundle 'h1mesuke/unite-outline'
 
+" sytax check
+" require linter (https://github.com/scrooloose/syntastic/wiki/Syntax-Checkers)
 NeoBundle 'scrooloose/syntastic'
 
+" python completion
+" require pip install jedi
 NeoBundle 'davidhalter/jedi-vim'
 
 " Undo tree manager
