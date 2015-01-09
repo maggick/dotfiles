@@ -19,20 +19,20 @@ order += "disk /home"
 #order = "ipv6"
 #order += "run_watch DHCP"
 #order += "run_watch VPN"
-order += "wireless wlan0"
-order += "ethernet eth0"
+order += "wireless wlp3s0"
+order += "ethernet enp0s25"
 order += "battery 0"
 order += "cpu_temperature 0"
 order += "load"
 order += "volume master"
 order += "time"
 
-wireless wlan0 {
+wireless wlp3s0 {
   format_up = "W: (%quality at %essid) %ip"
   format_down = "W: down"
 }
 
-ethernet eth0 {
+ethernet enp0s25 {
   # if you use %speed, i3status requires root privileges
   #format_up = "E: %ip (%speed)"
   format_up = "E: %ip"
@@ -65,7 +65,6 @@ cpu_temperature 0 {
 }
 
 disk "/" {
-  # '%free' counts blocks that are reserved to root;
   # you probably want to use '%avail' instead.
   # format = "/ %free"
   format = "/ %avail"
