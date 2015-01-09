@@ -1,14 +1,13 @@
-#|
-#| File     : ~/.bashrc
-#| Author   : Matthieu Keller
-#| Source   : https://github.com/maggick/dotFiles
-#| Licence  : WTFPL
-#| Created  : the 23 june 2010
-#| Update   : the 10 june 2014
-#|
-#| ~/.bashrc: executed by bash(1) for non-login shells.
-#| See /usr/share/doc/bash/examples/startup-files for examples
-#| (in the bash-doc package).
+# File     : ~/.bashrc
+# Author   : Matthieu Keller
+# Source   : https://github.com/maggick/dotFiles
+# Licence  : WTFPL
+# Created  : the 23 June 2010
+# Update   : the 09 January 2015
+#
+# ~/.bashrc: executed by bash(1) for non-login shells.
+# See /usr/share/doc/bash/examples/startup-files for examples
+# (in the bash-doc package).
 
 # If not running interactively, don't do anything
 [ -z "$PS1" ] && return
@@ -72,10 +71,9 @@ function man()
     vim -XMnR "+runtime! ftplugin/man.vim" "+Man $1" "+set nomodifiable" "+only"
 }
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH
+PATH=$PATH:$HOME/.gem/ruby/2.2.0/bin # add gem to PATH
 
 #define the default editor as vim
 export EDITOR=vim
-# term, be beautiful!
-#export TERM=xterm-256color
 
