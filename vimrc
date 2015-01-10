@@ -114,9 +114,6 @@ augroup indents
   autocmd FileType html,xhtml,javascript,css,c,cpp,python setlocal foldmethod=indent
 augroup END
 
-vmap > >gv
-vmap < <gv
-
 " REMAPPING
 " ste the fols method
 set foldmethod=indent
@@ -127,12 +124,12 @@ noremap <S-Tab> zA
 inoremap kj <Esc>
 imap <Home> <C-o><Home>
 
+vmap > >gv
+vmap < <gv
+
 " undo file
 set undofile
 set undodir=~/.vim/undodir
-
-" use the common clipboard as default register
-"set clipboard=unnamedplus
 
 " be beautiful!
 if !has('gui_running')

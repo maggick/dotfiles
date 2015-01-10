@@ -65,30 +65,33 @@ let g:airline_right_sep=''
 
 NeoBundle 'altercation/vim-colors-solarized'
 
-" ON TEST PLUGINS
-" year calendar in order to organize holidays
-NeoBundle 'YannMoisan/cra.vim'
-
-NeoBundle 'Shougo/neocomplete.vim'
-
 NeoBundle 'godlygeek/tabular'
 
 NeoBundle 'PotatoesMaster/i3-vim-syntax'
-
-" Plugin: source outliner
-NeoBundle 'h1mesuke/unite-outline'
 
 " sytax check
 " require linter (https://github.com/scrooloose/syntastic/wiki/Syntax-Checkers)
 NeoBundle 'scrooloose/syntastic'
 
-" python completion
-" require pip install jedi
-NeoBundle 'davidhalter/jedi-vim'
-
 " Undo tree manager
 NeoBundle 'sjl/gundo.vim'
 nnoremap <F5> :GundoToggle<CR>
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" ON TEST PLUGINS
+""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" year calendar in order to organize holidays
+NeoBundle 'YannMoisan/cra.vim'
+
+NeoBundle 'Shougo/neocomplete.vim'
+
+" Plugin: source outliner
+NeoBundle 'h1mesuke/unite-outline'
+
+" python completion
+" require pip install jedi
+NeoBundle 'davidhalter/jedi-vim'
 
 " Git wrapper
 NeoBundle 'tpope/vim-fugitive'
