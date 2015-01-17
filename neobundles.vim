@@ -93,6 +93,8 @@ NeoBundle 'h1mesuke/unite-outline'
 " require pip install jedi
 NeoBundle 'davidhalter/jedi-vim'
 
+NeoBundle 'tpope/vim-rails'
+
 " Git wrapper
 NeoBundle 'tpope/vim-fugitive'
 
