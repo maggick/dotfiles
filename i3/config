@@ -102,6 +102,9 @@ bindsym $mod+8 workspace 8
 bindsym $mod+9 workspace 9
 bindsym $mod+0 workspace 10
 
+bindsym $mod+n workspace www
+bindsym $mod+m workspace media
+
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace 1
 bindsym $mod+Shift+2 move container to workspace 2
@@ -113,6 +116,8 @@ bindsym $mod+Shift+7 move container to workspace 7
 bindsym $mod+Shift+8 move container to workspace 8
 bindsym $mod+Shift+9 move container to workspace 9
 bindsym $mod+Shift+0 move container to workspace 10
+
+workspace_auto_back_and_forth yes
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
@@ -150,7 +155,7 @@ bindsym $mod+r mode "resize"
 # startup session
 exec --no-startup-id i3-msg 'workspace 1; exec uxterm; workspace 1'
 exec --no-startup-id i3-msg 'workspace 2; exec urxvt; workspace 1'
-exec --no-startup-id i3-msg 'workspace 3; exec firefox; workspace 1'
+exec --no-startup-id i3-msg 'workspace www; exec firefox; workspace 1'
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
