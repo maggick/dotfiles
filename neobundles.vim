@@ -96,6 +96,9 @@ NeoBundle 'davidhalter/jedi-vim'
 " Git wrapper
 NeoBundle 'tpope/vim-fugitive'
 
+"better commit view
+NeoBundle 'rhysd/committia.vim'
+
 call neobundle#end()
 
 filetype plugin indent on     " Required!
