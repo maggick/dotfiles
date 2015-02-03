@@ -130,6 +130,9 @@ vmap < <gv
 " undo file
 set undofile
 set undodir=~/.vim/undodir
+" let my swap and backup files in .vim
+set backupdir=~/.vim/bak          " backup files
+set directory=~/.vim/swp          " swap files
 
 " be beautiful!
 if !has('gui_running')

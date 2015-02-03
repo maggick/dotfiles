@@ -13,6 +13,8 @@ rm ~/.bashrc
 ln -s ~/dotfiles/vimrc ~/.vimrc
 ln -s ~/dotfiles/bashrc ~/.bashrc
 mkdir -p ~/.vim/undodir/
+mkdir -p ~/.vim/bak
+mkdir -p ~/.vim/swp
 mkdir -p ~/.vim/bundle
 git clone https://github.com/Shougo/neobundle.vim ~/.vim/bundle/neobundle.vim
 rm ~/.bash_profile
