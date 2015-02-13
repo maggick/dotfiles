@@ -81,9 +81,6 @@ nnoremap <F5> :GundoToggle<CR>
 " ON TEST PLUGINS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" year calendar in order to organize holidays
-NeoBundle 'YannMoisan/cra.vim'
-
 NeoBundle 'Shougo/neocomplete.vim'
 
 " Plugin: source outliner
