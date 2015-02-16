@@ -11,6 +11,8 @@ set nocompatible          " be iMproved
 
 " neobundle configuration
 source ~/dotfiles/neobundles.vim
+" macro autoload
+source ~/dotfiles/macros.vim
 
 " cra.cim setup
 let g:NbRemainingCP = 0
@@ -55,9 +57,9 @@ endif
 
 " use change immediatly
 autocmd! BufWritePost .vimrc source ~/.vimrc
-autocmd! BufWritePost vimrc source ~/vimrc
+autocmd! BufWritePost vimrc source ~/dotfiles/vimrc
 autocmd! BufWritePost .bashrc source ~/.bashrc
-autocmd! BufWritePost bashrc source ~/bashrc
+autocmd! BufWritePost bashrc source ~/dotfiles/bashrc
 
 
 "|    Ranger as Vim file manager                                           <<<
