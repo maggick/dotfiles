@@ -77,6 +77,9 @@ NeoBundle 'scrooloose/syntastic'
 NeoBundle 'sjl/gundo.vim'
 nnoremap <F5> :GundoToggle<CR>
 
+"better commit view
+NeoBundle 'rhysd/committia.vim'
+
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 " ON TEST PLUGINS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
@@ -94,9 +97,6 @@ NeoBundle 'tpope/vim-rails'
 
 " Git wrapper
 NeoBundle 'tpope/vim-fugitive'
-
-"better commit view
-NeoBundle 'rhysd/committia.vim'
 
 call neobundle#end()
 
