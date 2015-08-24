@@ -65,7 +65,7 @@ URxvt*scrollBar : false
 URxvt*scrollBar_right : false
 URxvt*transparent : false
 URxvt*shading : 40
-URxvt*cursorBlink : true
+URxvt*cursorBlink : false
 
 ! proper font rendering:
 ! the “letterSpace” option is absolutely required to keep the text readable
