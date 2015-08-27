@@ -4,8 +4,8 @@
 #| Author   : Matthieu Keller
 #| Source   : https://github.com/maggick/dotFiles
 #| Licence  : WTFPL
-#| Created  : ?
-#| Updated  : the 10 june 2014
+#| Created  : the 14 February 2014
+#| Updated  : the 15 May 2015
 #|
 
 rm ~/.vimrc

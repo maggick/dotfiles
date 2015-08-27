@@ -3,8 +3,8 @@
 "| Author   : Matthieu Keller
 "| Source   : https://github.com/maggick/dotFiles
 "| Licence  : WTFPL
-"| Created  : the 6 september 2013
-"| Updated  : the 10 june 2014
+"| Created  : the 6 September 2013
+"| Updated  : the 15 April 2015
 "|
 
 if has('vim_starting')

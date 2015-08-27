@@ -3,7 +3,7 @@
 # Source   : https://github.com/maggick/dotFiles
 # Licence  : WTFPL
 # Created  : the 23 June 2010
-# Update   : the 09 January 2015
+# Updated  : the 20 August 2015
 #
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # See /usr/share/doc/bash/examples/startup-files for examples

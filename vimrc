@@ -4,7 +4,7 @@
 "| Source   : https://github.com/maggick/dotFiles
 "| Licence  : WTFPL
 "| Created  : the 23 june 2010
-"| Updated  : the 10 june 2014
+"| Updated  : the 16 February 2015
 "|
 
 set nocompatible          " be iMproved
