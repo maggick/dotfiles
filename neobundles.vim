@@ -85,6 +85,11 @@ NeoBundle 'rhysd/committia.vim'
 " ON TEST PLUGINS
 """"""""""""""""""""""""""""""""""""""""""""""""""""""
 
+" from kaze vimrc
+NeoBundle 'mozfr/mozilla.vim'
+NeoBundle 'jceb/vim-orgmode'
+NeoBundle 'tpope/vim-speeddating'
+
 NeoBundle 'Shougo/neocomplete.vim'
 
 " Plugin: source outliner
