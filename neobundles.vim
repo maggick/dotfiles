@@ -56,6 +56,10 @@ NeoBundle 'tomtom/quickfixsigns_vim'
 NeoBundle 'Shougo/unite.vim'
 NeoBundle 'tpope/vim-surround'
 
+" python completion
+" require pip install jedi
+NeoBundle 'davidhalter/jedi-vim'
+
 " air line plugin and a simple configuration in order to avoid patching font
 NeoBundle 'bling/vim-airline'
 " the separator used on the left side >
@@ -93,10 +97,6 @@ NeoBundle 'Shougo/neocomplete.vim'
 
 " Plugin: source outliner
 NeoBundle 'h1mesuke/unite-outline'
-
-" python completion
-" require pip install jedi
-NeoBundle 'davidhalter/jedi-vim'
 
 NeoBundle 'tpope/vim-rails'
 
