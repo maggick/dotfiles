@@ -6,8 +6,6 @@
 "| Created  : the 23 june 2010
 "|
 
-set nocompatible          " be iMproved
-
 " neobundle configuration
 source ~/dotfiles/neobundles.vim
 " macro autoload
