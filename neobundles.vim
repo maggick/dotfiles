@@ -103,6 +103,10 @@ NeoBundle 'tpope/vim-rails'
 " Git wrapper
 NeoBundle 'tpope/vim-fugitive'
 
+" html5 and javascript
+NeoBundle 'othree/html5.vim'
+NeoBundle 'othree/yajs.vim'
+
 call neobundle#end()
 
 filetype plugin indent on     " Required!
