@@ -123,8 +123,10 @@ noremap <S-Tab> zA
 inoremap kj <Esc>
 imap <Home> <C-o><Home>
 
-vmap > >gv
-vmap < <gv
+"disable the auto select last selection when indenting for a try
+"=> use >ap <ap
+"vmap > >gv
+"vmap < <gv
 
 " undo file
 set undofile
