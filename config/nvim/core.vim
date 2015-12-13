@@ -1,7 +1,16 @@
-"source ~/.config/nvim/plugins.vim
+"|
+"| File     : ~/.config/nvim/core.vim
+"| Author   : Matthieu Keller
+"| Source   : https://github.com/maggick/dotFiles
+"| Licence  : WTFPL
+"| Created  : the 13 december 2015
+"|
+"|This is a simple configuration file for neovim for debugging purpose
+"|
+
 call plug#begin('~/.config/nvim/bundle/')
   Plug 'tpope/vim-sensible'
-  Plug 'fabi1cazenave/kalahari.vim'
+  Plug 'altercation/vim-colors-solarized'
 call plug#end() " add plugins to &runtimepath and enable syntax highlighting
 
 " User Interface settings

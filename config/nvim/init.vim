@@ -1,3 +1,11 @@
+"|
+"| File     : ~/.config/nvim/init.vim
+"| Author   : Matthieu Keller
+"| Source   : https://github.com/maggick/dotFiles
+"| Licence  : WTFPL
+"| Created  : the 13 december 2015
+"|
+
 source ~/.config/nvim/plugins.vim
 
 " User Interface settings

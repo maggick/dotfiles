@@ -1,3 +1,11 @@
+"|
+"| File     : ~/.config/nvim/plugins.vim
+"| Author   : Matthieu Keller
+"| Source   : https://github.com/maggick/dotFiles
+"| Licence  : WTFPL
+"| Created  : the 13 december 2015
+"|
+
 call plug#begin('~/.config/nvim/bundle/')
   "default settings everyone should agree to
   Plug 'tpope/vim-sensible'
