@@ -35,3 +35,7 @@ set linebreak
 
 " escape on kj
 imap kj <Esc>
+
+"auto select last selection when indenting
+vmap > >gv
+vmap < <gv
