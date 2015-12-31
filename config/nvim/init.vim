@@ -28,6 +28,10 @@ set smartindent
 set shiftround
 set autoindent
 set foldmethod=indent
+" only 80 columns
+set textwidth=80
+set colorcolumn=+0
+set linebreak
 
 " escape on kj
 imap kj <Esc>
