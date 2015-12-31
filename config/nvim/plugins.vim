@@ -14,6 +14,14 @@ call plug#begin('~/.config/nvim/bundle/')
   " theme solarized
   Plug 'altercation/vim-colors-solarized'
 
+  " air line plugin and a simple configuration in order to avoid patching font
+  Plug 'bling/vim-airline'
+  " the separator used on the left side >
+  let g:airline_left_sep=''
+  " the separator used on the right side >
+  let g:airline_right_sep=''
+
+  "plugin to make table (Tabularize)
   Plug 'godlygeek/tabular'
 
   Plug 'PotatoesMaster/i3-vim-syntax'
