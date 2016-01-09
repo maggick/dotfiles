@@ -64,6 +64,9 @@ alias tmux='tmux -2'
 # alias for my layout
 alias lafayette='xkbcomp -w9 ~/dotfiles/lafayette.xkb $DISPLAY'
 
+# neovim
+alias vim='nvim'
+
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH
 PATH=$PATH:$HOME/.gem/ruby/2.2.0/bin # add gem to PATH
 PATH=$PATH:$HOME/.local/bin # add local bin to PATH
