@@ -61,9 +61,6 @@ alias rm='rm -I --preserve-root'
 alias less='less -F'
 alias tmux='tmux -2'
 
-# alias for my layout
-alias lafayette='xkbcomp -w9 ~/dotfiles/lafayette.xkb $DISPLAY'
-
 # neovim
 alias vim='nvim'
 
