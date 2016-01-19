@@ -33,6 +33,9 @@ set textwidth=80
 set colorcolumn=+0
 set linebreak
 
+" no highlight the search
+set nohlsearch
+
 " reopening a file at the same place than last time
 if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif

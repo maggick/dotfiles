@@ -26,7 +26,6 @@ call plug#begin('~/.config/nvim/bundle/')
 
   Plug 'PotatoesMaster/i3-vim-syntax'
 
-
   "on test plugins
   Plug 'fabi1cazenave/kalahari.vim'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
