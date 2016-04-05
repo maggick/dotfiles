@@ -14,6 +14,9 @@ call plug#begin('~/.config/nvim/bundle/')
   " theme solarized
   Plug 'altercation/vim-colors-solarized'
 
+  " vimwiki
+  Plug 'vimwiki/vimwiki'
+
   " air line plugin and a simple configuration in order to avoid patching font
   Plug 'bling/vim-airline'
   " the separator used on the left side >
