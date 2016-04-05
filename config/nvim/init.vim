@@ -32,6 +32,7 @@ set foldmethod=indent
 set textwidth=80
 set colorcolumn=+0
 set linebreak
+set scrolloff=5       "set the number of lines to always display
 
 " no highlight the search
 set nohlsearch
