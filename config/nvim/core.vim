@@ -21,6 +21,12 @@ colorscheme kalahari    " `desert` variant (mostly to test the plugin manager)
 " show tabs / nbsp / trailing spaces
 set list listchars=nbsp:¤,tab:··,trail:¤,extends:▶,precedes:◀
 
+" undo file
+set undofile
+set undodir=~/.config/nvim/undodir
+set backupdir=~/.config/nvim/bak
+set directory=~/.config/nvim/swp
+
 " two-space indentation
 set tabstop=2
 set shiftwidth=2
