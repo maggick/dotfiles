@@ -12,7 +12,7 @@ source ~/.config/nvim/plugins.vim
 set number              " show absolute line numbers
 set ruler               " display cursor position in the status line
 
-colorscheme solarized
+colorscheme jellybeans
 set background=dark
 
 " show tabs / nbsp / trailing spaces
