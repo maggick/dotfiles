@@ -163,7 +163,7 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # startup session
-exec --no-startup-id i3-msg 'workspace 1; exec uxterm; workspace 1'
+exec --no-startup-id i3-msg 'workspace 1; exec urxvt; workspace 1'
 exec --no-startup-id i3-msg 'workspace 2; exec urxvt; workspace 1'
 # exec --no-startup-id i3-msg 'workspace media; exec uxterm; workspace 1'
 exec --no-startup-id i3-msg 'workspace www; exec firefox; workspace 1'
