@@ -18,7 +18,7 @@ let g:NbRemainingCP = 0
 "Misc
 """"""""""""""""""""""""""""""""""""""""""""""""""
 set background=dark               " dark background
-colorscheme solarized
+colorscheme jellybeans
 syntax enable                     " syntax color
 filetype on
 set encoding=utf-8
