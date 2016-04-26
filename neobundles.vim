@@ -68,6 +68,7 @@ let g:airline_left_sep=''
 let g:airline_right_sep=''
 
 NeoBundle 'altercation/vim-colors-solarized'
+NeoBundle 'nanotech/jellybeans.vim'
 
 NeoBundle 'godlygeek/tabular'
 
