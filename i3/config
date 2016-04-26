@@ -122,6 +122,13 @@ bindsym $mod+Shift+m move container to workspace media
 
 workspace_auto_back_and_forth yes
 
+# scratchpad
+# Make the currently focused window a scratchpad
+bindsym $mod+Shift+minus move scratchpad
+
+# Show the first scratchpad window
+bindsym $mod+minus scratchpad show
+
 # reload the configuration file
 bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
