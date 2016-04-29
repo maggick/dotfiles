@@ -49,3 +49,10 @@ imap kj <Esc>
 "auto select last selection when indenting
 vmap > >gv
 vmap < <gv
+
+" undo file
+set undofile
+set undodir=~/.config/nvim/undodir
+" let my swap and backup files in .vim
+set backupdir=~/.config/nvim//bak          " backup files
+set directory=~/.convig/nvim/swp          " swap files
