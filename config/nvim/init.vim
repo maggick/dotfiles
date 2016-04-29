@@ -28,7 +28,7 @@ set expandtab
 set smartindent
 set shiftround
 set autoindent
-set foldmethod=indent
+set foldmethod=syntax
 " only 80 columns
 set textwidth=80
 set colorcolumn=+0
