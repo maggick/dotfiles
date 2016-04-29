@@ -14,6 +14,7 @@ set ruler               " display cursor position in the status line
 
 colorscheme jellybeans
 set background=dark
+highlight ColorColumn ctermbg=red
 
 " show tabs / nbsp / trailing spaces
 set list listchars=nbsp:¤,tab:··,trail:¤,extends:▶,precedes:◀
