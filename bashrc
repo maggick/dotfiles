@@ -69,7 +69,7 @@ PATH=$PATH:$HOME/.gem/ruby/2.2.0/bin # add gem to PATH
 PATH=$PATH:$HOME/.local/bin # add local bin to PATH
 
 #define the default editor as vim
-export EDITOR=vim
+export EDITOR=nvim
 
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
