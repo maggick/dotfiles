@@ -32,6 +32,13 @@ call plug#begin('~/.config/nvim/bundle/')
   "better commit view
   Plug 'rhysd/committia.vim'
 
-  "on test plugins
+  "fuzzy fidings research
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+
+
+  """"""""""""""""""""""""""
+  """"" on test plugins """"
+  """"""""""""""""""""""""""
+  "linter
+  Plug 'benekastah/neomake'
 call plug#end() " add plugins to &runtimepath and enable syntax highlighting
