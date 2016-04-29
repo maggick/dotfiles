@@ -29,6 +29,9 @@ call plug#begin('~/.config/nvim/bundle/')
 
   Plug 'PotatoesMaster/i3-vim-syntax'
 
+  "better commit view
+  Plug 'rhysd/committia.vim'
+
   "on test plugins
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 call plug#end() " add plugins to &runtimepath and enable syntax highlighting
