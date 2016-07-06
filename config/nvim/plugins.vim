@@ -41,4 +41,7 @@ call plug#begin('~/.config/nvim/bundle/')
   """"""""""""""""""""""""""
   "linter
   Plug 'benekastah/neomake'
+
+  "git integration
+  Plug 'jreybert/vimagit'
 call plug#end() " add plugins to &runtimepath and enable syntax highlighting
