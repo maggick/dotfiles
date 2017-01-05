@@ -44,4 +44,8 @@ call plug#begin('~/.config/nvim/bundle/')
 
   "rust
   Plug 'rust-lang/rust.vim'
+
+  "git integration
+  Plug 'jreybert/vimagit'
+
 call plug#end() " add plugins to &runtimepath and enable syntax highlighting
