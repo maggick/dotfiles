@@ -45,6 +45,8 @@ endif
 
 " escape on kj
 imap kj <Esc>
+" escape terminal mode on kj
+:tnoremap kj <C-\><C-n>
 
 "auto select last selection when indenting
 vmap > >gv
