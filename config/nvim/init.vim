@@ -34,6 +34,10 @@ set textwidth=80
 set colorcolumn=+0
 set linebreak
 set scrolloff=5       "set the number of lines to always display
+set showcmd
+
+" let you see reges in live. Can also be set to nosplit
+set inccommand=split
 
 " no highlight the search
 set nohlsearch
