@@ -122,7 +122,7 @@ URxvt.keysym.C-minus : perl:font-size:decrease
 !|=============================================================================
 
 urxvt*foreground: white
-urxvt*background: black
+urxvt*background: #151515
 XTerm*foreground: white
 XTerm*background: black
 
