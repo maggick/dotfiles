@@ -50,3 +50,5 @@ rm ~/.config/ranger/rc.conf
 ln -s  ~/dotfiles/config/ranger/colorschemes/solarized.py ~/.config/ranger/colorschemes/solarized.py
 ln -s  ~/dotfiles/config/ranger/rc.conf ~/.config/ranger/rc.conf
 
+# install vim-plug for neovim plugins
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
