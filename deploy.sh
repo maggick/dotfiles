@@ -49,5 +49,4 @@ rm ~/.config/ranger/colorschemes/solarized.py
 rm ~/.config/ranger/rc.conf
 ln -s  ~/dotfiles/config/ranger/colorschemes/solarized.py ~/.config/ranger/colorschemes/solarized.py
 ln -s  ~/dotfiles/config/ranger/rc.conf ~/.config/ranger/rc.conf
-wget https://raw.githubusercontent.com/seebi/dircolors-solarized/master/dircolors.256dark -q -O .dircolors
 
