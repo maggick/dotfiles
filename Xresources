@@ -70,8 +70,8 @@ URxvt*cursorBlink : false
 ! proper font rendering:
 ! the “letterSpace” option is absolutely required to keep the text readable
 ! (problem: wide characters like ←→ might become unreadable… :-/)
-URxvt*letterSpace : -1
-URxvt*font : xft:Inconsolata:size=11
+! URxvt*letterSpace : -1
+URxvt*font : xft:Fira mono:size=10
 
 ! reclaim <Alt-s> and <Ctrl-Shift-*> shortcuts
 URxvt*searchable-scrollback: M-S-s
@@ -102,7 +102,6 @@ URxvt.keysym.C-Home : \033[1;5H
 URxvt.perl-ext-common : default,matcher,clipboard,font-size,-selection-popup
 
 ! extensions -> matcher: open URL with a left click
-URxvt.perl-ext-common: default,matcher
 URxvt.url-launcher: /usr/bin/xdg-open
 URxvt.matcher.button: 1
 
