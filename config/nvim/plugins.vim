@@ -42,9 +42,6 @@ call plug#begin('~/.config/nvim/bundle/')
   "linter
   Plug 'benekastah/neomake'
 
-  "rust
-  Plug 'rust-lang/rust.vim'
-
   "git integration
   Plug 'jreybert/vimagit'
 
