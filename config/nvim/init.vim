@@ -7,6 +7,7 @@
 "|
 
 source ~/.config/nvim/plugins.vim
+source ~/dotfiles/macros.vim
 
 " User Interface settings
 set number              " show absolute line numbers
