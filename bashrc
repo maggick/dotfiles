@@ -71,5 +71,4 @@ PATH=$PATH:$HOME/.local/bin # add local bin to PATH
 #define the default editor as vim
 export EDITOR=nvim
 
-
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
