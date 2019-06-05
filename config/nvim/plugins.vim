@@ -27,7 +27,8 @@ call plug#begin('~/.config/nvim/bundle/')
   "plugin to make table (Tabularize)
   Plug 'godlygeek/tabular'
 
-  Plug 'PotatoesMaster/i3-vim-syntax'
+  " plugin no more maintained testing mboughaba/i3config.vim instead
+  "Plug 'PotatoesMaster/i3-vim-syntax'
 
   "better commit view
   Plug 'rhysd/committia.vim'
@@ -41,5 +42,10 @@ call plug#begin('~/.config/nvim/bundle/')
   """"""""""""""""""""""""""
   "linter
   Plug 'benekastah/neomake'
+
+
+  " i3config syntax in vim
+  " replace 'PotatoesMaster/i3-vim-syntax'
+  Plug 'mboughaba/i3config.vim'
 
 call plug#end() " add plugins to &runtimepath and enable syntax highlighting
