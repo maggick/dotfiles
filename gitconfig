@@ -3,7 +3,7 @@
   status = auto
   branch = auto
 [user]
-  name = Matthieu Keller
+  name = maggick
   email = keller.mdpa@gmail.com
 [alias]
    ci = commit
