@@ -63,3 +63,7 @@ set undodir=~/.config/nvim/undodir
 " let my swap and backup files in .vim
 set backupdir=~/.config/nvim//bak          " backup files
 set directory=~/.convig/nvim/swp          " swap files
+
+" vimwiki config
+let g:vimwiki_list = [{'path':'~/perso/vimwiki', 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_global_ext = 0
