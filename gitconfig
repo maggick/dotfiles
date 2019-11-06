@@ -4,7 +4,8 @@
   branch = auto
 [user]
   name = maggick
-  email = keller.mdpa@gmail.com
+  email = maggick@users.noreply.github.com
+	signingkey = 05BAF4954F71093809CBD7319CA1D703CDBC35B1
 [alias]
    ci = commit
    co = checkout
@@ -12,3 +13,5 @@
    br = branch
 [http]
 	sslVerify = true
+[commit]
+	gpgSign = true
