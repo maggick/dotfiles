@@ -2,4 +2,4 @@
 xrdb -load ~/.Xresources
 xkbcomp -w9 ~/dotfiles/lafayette.xkb $DISPLAY
 nitrogen --restore
-exec i3
+exec dbus-launch i3
