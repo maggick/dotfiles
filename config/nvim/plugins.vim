@@ -44,5 +44,7 @@ call plug#begin('~/.config/nvim/bundle/')
   "linter
   Plug 'benekastah/neomake'
 
+  "latex
+  Plug 'lervag/vimtex'
 
 call plug#end() " add plugins to &runtimepath and enable syntax highlighting
