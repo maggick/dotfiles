@@ -6,7 +6,7 @@
 "| Created  : the 13 december 2015
 "|
 
-source ~/.config/nvim/plugins.vim
+source ~/dotfiles/config/nvim/plugins.vim
 source ~/dotfiles/macros.vim
 
 " User Interface settings
@@ -65,5 +65,6 @@ set backupdir=~/.config/nvim/bak          " backup files
 set directory=~/.config/nvim/swp          " swap files
 
 " vimwiki config
-let g:vimwiki_list = [{'path':'~/perso/vimwiki', 'syntax': 'markdown', 'ext': '.md'}]
+let g:vimwiki_list = [{'path':'~/documents/perso/vimwiki/', 'syntax': 'markdown', 'ext': '.md'}]
 let g:vimwiki_global_ext = 0
+
