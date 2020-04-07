@@ -19,27 +19,31 @@ order += "disk /"
 #order = "ipv6"
 #order += "run_watch DHCP"
 #order += "run_watch VPN"
-order += "wireless wlp4s0"
+order += "wireless wlp3s0"
 order += "ethernet enp0s31f6"
-order += "battery 0"
+order += "battery all"
 order += "cpu_temperature 0"
 order += "load"
+order += "memory"
 order += "volume master"
 order += "time"
+order += "tztime phoenix"
 
-wireless wlp4s0 {
+wireless wlp3s0 {
+  #format_up = "W: %ip (%speed)"
+  #format_up: "W: (%quality at %essid, %bitrate / %frequency) %ip"
   format_up = "W: (%quality at %essid) %ip"
   format_down = "W: down"
 }
 
 ethernet enp0s31f6 {
   # if you use %speed, i3status requires root privileges
-  #format_up = "E: %ip (%speed)"
+  format_up = "E: %ip (%speed)"
   format_up = "E: %ip"
   format_down = "E: down"
 }
 
-battery 0 {
+battery all {
   format = "%status %percentage %remaining"
 }
 
@@ -52,7 +56,6 @@ run_watch VPN {
 }
 
 time {
-  #format = "%Y-%m-%d %H:%M:%S"
   format = "%Y-%m-%d %H:%M"
 }
 
@@ -60,19 +63,18 @@ load {
   format = "%1min"
 }
 
+memory {
+        format = "%used / %available"
+        threshold_degraded = "1G"
+        format_degraded = "MEMORY < %available"
+}
+
 cpu_temperature 0 {
   format = "T: %degrees °C"
 }
 
 disk "/" {
-  # you probably want to use '%avail' instead.
-  # format = "/ %free"
   format = "/ %avail"
-}
-
-disk /home {
-  # I have a separate /home partition…
-  format = "/home %avail"
 }
 
 volume master {
@@ -81,5 +83,15 @@ volume master {
   mixer = "Master"
   mixer_idx = 0
  }
+
+tztime phoenix {
+        #format = "<span foreground='#ffffff'>time:</span> %time"
+        format =  "%time"
+        format_time = "%H:%M %Z"
+        timezone = "America/Phoenix"
+        hide_if_equals_localtime = true
+}
+
+
 
 # vim: set ft=config:
