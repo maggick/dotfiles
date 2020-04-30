@@ -47,4 +47,7 @@ call plug#begin('~/.config/nvim/bundle/')
   "latex
   Plug 'lervag/vimtex'
 
+  "textile
+  Plug 'timcharper/textile.vim'
+
 call plug#end() " add plugins to &runtimepath and enable syntax highlighting
