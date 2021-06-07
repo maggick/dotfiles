@@ -30,6 +30,7 @@ set smartindent
 set shiftround
 set autoindent
 set foldmethod=syntax
+set nofoldenable "don't fold anything at opening
 " only 80 columns
 set textwidth=80
 set colorcolumn=+0
