@@ -71,8 +71,8 @@ alias lafayette='xkbcomp -w9 ~/dotfiles/lafayette.xkb $DISPLAY'
 
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH
-PATH=$PATH:$HOME/.gem/ruby/2.2.0/bin # add gem to PATH
 PATH=$PATH:$HOME/.local/bin # add local bin to PATH
+PATH=$PATH:/home/maggick/.gem/ruby/2.7.0/bin
 
 #define the default editor as vim
 export EDITOR=nvim
