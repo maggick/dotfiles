@@ -50,4 +50,7 @@ call plug#begin('~/.config/nvim/bundle/')
   "textile
   Plug 'timcharper/textile.vim'
 
+  " completion
+  Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 call plug#end() " add plugins to &runtimepath and enable syntax highlighting

@@ -8,6 +8,7 @@
 
 source ~/dotfiles/config/nvim/plugins.vim
 source ~/dotfiles/macros.vim
+source ~/dotfiles/config/nvim/coc_plugin.vim
 
 " User Interface settings
 set number              " show absolute line numbers
