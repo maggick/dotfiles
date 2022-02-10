@@ -79,3 +79,5 @@ export EDITOR=nvim
 export SUDO_EDITOR=vim
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+complete -C /usr/bin/terraform terraform
