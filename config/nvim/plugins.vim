@@ -24,6 +24,8 @@ call plug#begin('~/.config/nvim/bundle/')
   " the separator used on the right side >
   let g:airline_right_sep=''
 
+  Plug 'vim-airline/vim-airline-themes'
+
   "plugin to make table (Tabularize)
   Plug 'godlygeek/tabular'
 
