@@ -14,7 +14,7 @@ source ~/dotfiles/config/nvim/coc_plugin.vim
 set number              " show absolute line numbers
 set ruler               " display cursor position in the status line
 
-colorscheme jellybeans
+colorscheme monokai
 set background=dark
 highlight ColorColumn ctermbg=red
 

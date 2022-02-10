@@ -53,4 +53,6 @@ call plug#begin('~/.config/nvim/bundle/')
   " completion
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+  Plug 'tanvirtin/monokai.nvim'
+
 call plug#end() " add plugins to &runtimepath and enable syntax highlighting
