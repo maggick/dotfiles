@@ -41,14 +41,19 @@ require('packer').startup(function(use)
   use 'wbthomason/packer.nvim' -- Package manager
   use 'tpope/vim-fugitive' -- Git commands in nvim
   use 'tpope/vim-rhubarb' -- Fugitive-companion to interact with github
+  use 'vimwiki/vimwiki' -- wiki plugin
+  use 'godlygeek/tabular' -- make table
+  use 'mboughaba/i3config.vim' -- i3config syntax
+  use 'rhysd/committia.vim' -- better commit view
+  use 'lervag/vimtex' -- latex support in vim
   use "williamboman/nvim-lsp-installer"
-  use "neovim/nvim-lspconfig"
   -- use 'numToStr/Comment.nvim' -- "gc" to comment visual regions/lines
-  use 'ludovicchabant/vim-gutentags' -- Automatic tags management
+  -- use 'ludovicchabant/vim-gutentags' -- Automatic tags management
   -- UI to select things (files, grep results, open buffers...)
   use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim' } }
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
   use 'mjlbach/onedark.nvim' -- Theme inspired by Atom
+  use 'tanvirtin/monokai.nvim' -- Theme inspired by Atom
   use 'nvim-lualine/lualine.nvim' -- Fancier statusline
   -- Add indentation guides even on blank lines
   use 'lukas-reineke/indent-blankline.nvim'
