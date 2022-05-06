@@ -69,6 +69,8 @@ alias vim='nvim'
 # layout
 alias lafayette='xkbcomp -w9 ~/dotfiles/lafayette.xkb $DISPLAY'
 
+# linux command keeper
+alias keep='echo $(history -p !!) >>~/dotfiles/bash_keeper.txt'
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH
 PATH=$PATH:$HOME/.local/bin # add local bin to PATH
