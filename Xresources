@@ -120,10 +120,10 @@ URxvt.keysym.C-minus : perl:font-size:decrease
 ! color scheme for the X Window System
 !|=============================================================================
 
-urxvt*foreground: white
-urxvt*background: #151515
+urxvt*foreground: #ABB2BF
+urxvt*background: #282C34
 XTerm*foreground: white
-XTerm*background: black
+XTerm*background: #4f4a4a
 
 *color0:  #2E3436
 *color1:  #a40000
