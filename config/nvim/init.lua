@@ -1,3 +1,12 @@
+--|
+--| File     : ~/.config/nvim/init.lua
+--| Author   : maggick
+--| Source   : https://github.com/maggick/dotFiles
+--| Licence  : WTFPL
+--| Created  : the 13 december 2015
+--|
+
+
 local fn = vim.fn
 -- Automatically install packer
 local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
