@@ -14,11 +14,19 @@ if fn.empty(fn.glob(install_path)) > 0 then
   vim.cmd [[packadd packer.nvim]]
 end
 
--- Autocommand that reloads neovim whenever you save the plugins.lua file
+-- Autocommand that reloads neovim whenever you save the init.lua file
+--vim.cmd [[
+--  augroup packer_user_config
+--    autocmd!
+--    autocmd BufWritePost init.lua source <afile> | PackerSync
+--  augroup end
+--]]
+
+-- reopening a file at the same place than last time
 vim.cmd [[
-  augroup packer_user_config
-    autocmd!
-    autocmd BufWritePost plugins.lua source <afile> | PackerSync
+augroup reopen_last
+  autocmd!
+  autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
   augroup end
 ]]
 
@@ -41,7 +49,18 @@ require('packer').startup(function(use)
   use 'wbthomason/packer.nvim' -- Package manager
   use 'tpope/vim-fugitive' -- Git commands in nvim
   use 'tpope/vim-rhubarb' -- Fugitive-companion to interact with github
-  use 'vimwiki/vimwiki' -- wiki plugin
+  use {
+    'vimwiki/vimwiki',  -- wiki plugin
+    config = function()
+        vim.g.vimwiki_list = {
+            {
+                path = '/home/maggick/documents/perso/vimwiki/',
+                syntax = 'markdown',
+                ext = '.md',
+            }
+        }
+    end
+  }
   use 'godlygeek/tabular' -- make table
   use 'mboughaba/i3config.vim' -- i3config syntax
   use 'rhysd/committia.vim' -- better commit view
@@ -53,7 +72,6 @@ require('packer').startup(function(use)
   use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim' } }
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
   use 'mjlbach/onedark.nvim' -- Theme inspired by Atom
-  use 'tanvirtin/monokai.nvim' -- Theme inspired by Atom
   use 'nvim-lualine/lualine.nvim' -- Fancier statusline
   -- Add indentation guides even on blank lines
   use 'lukas-reineke/indent-blankline.nvim'
@@ -83,6 +101,8 @@ vim.wo.number = true
 
 --Enable break indent
 vim.o.breakindent = true
+
+vim.g.inccommand = 'split'
 
 --Save undo history
 vim.opt.undofile = true
@@ -114,6 +134,8 @@ require('lualine').setup {
 
 --Enable Comment.nvim
 -- require('Comment').setup()
+
+vim.keymap.set({ 'i' }, 'kj', '<Esc>')
 
 --Remap space as leader key
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
