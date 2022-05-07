@@ -118,10 +118,19 @@ vim.wo.number = true
 
 --Enable break indent
 vim.o.breakindent = true
+-- FIXME
+
+-- show tabs / nbsp / trailing spaces
+-- set list listchars=nbsp:¤,tab:··,trail:¤,extends:▶,precedes:◀
+-- FIXME TODO
+vim.o.listchars = 'nbsp:¤,tab:··,trail:¤,extends:▶,precedes:◀'
+
 -- Highlight specific words (FIXME TODO)
 -- FIXME TODO
 -- TODO
 
+-- regex are applied live in a buffer
+-- FIXME TODO
 vim.g.inccommand = 'split'
 
 --Save undo history
