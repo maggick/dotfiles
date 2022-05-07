@@ -95,9 +95,17 @@ require('packer').startup(function(use)
   use 'hrsh7th/cmp-nvim-lsp'
   use 'saadparwaiz1/cmp_luasnip'
   use 'L3MON4D3/LuaSnip' -- Snippets plugin
+  -- use {"folke/todo-comments.nvim", requires = {"nvim-lua/plenary.nvim" }}
+
+  use {
+    "folke/todo-comments.nvim",
+    requires = "nvim-lua/plenary.nvim",
+  }
 end)
 
 require("nvim-lsp-installer").setup {}
+require("todo-comments").setup {}
+-- FIXME
 
 --Set highlight on search
 vim.o.hlsearch = false
@@ -110,6 +118,9 @@ vim.wo.number = true
 
 --Enable break indent
 vim.o.breakindent = true
+-- Highlight specific words (FIXME TODO)
+-- FIXME TODO
+-- TODO
 
 vim.g.inccommand = 'split'
 
