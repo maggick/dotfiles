@@ -96,16 +96,16 @@ require('packer').startup(function(use)
   use 'saadparwaiz1/cmp_luasnip'
   use 'L3MON4D3/LuaSnip' -- Snippets plugin
 
-  -- TODO: use {"folke/todo-comments.nvim", requires = {"nvim-lua/plenary.nvim" }}
-  use {
-    "folke/todo-comments.nvim",
-    requires = "nvim-lua/plenary.nvim",
-  }
+  use { "folke/todo-comments.nvim", requires = "nvim-lua/plenary.nvim" } -- highlight specific keywords
 end)
 
 require("nvim-lsp-installer").setup {}
-require("todo-comments").setup {}
--- FIXME
+require("todo-comments").setup {
+  -- TODO: change config or patch font
+  -- your configuration comes here
+  -- or leave it empty to use the default settings
+  -- refer to the configuration section below
+}
 
 --Set highlight on search
 vim.o.hlsearch = false
