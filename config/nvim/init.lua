@@ -95,8 +95,8 @@ require('packer').startup(function(use)
   use 'hrsh7th/cmp-nvim-lsp'
   use 'saadparwaiz1/cmp_luasnip'
   use 'L3MON4D3/LuaSnip' -- Snippets plugin
-  -- use {"folke/todo-comments.nvim", requires = {"nvim-lua/plenary.nvim" }}
 
+  -- TODO: use {"folke/todo-comments.nvim", requires = {"nvim-lua/plenary.nvim" }}
   use {
     "folke/todo-comments.nvim",
     requires = "nvim-lua/plenary.nvim",
@@ -118,19 +118,14 @@ vim.wo.number = true
 
 --Enable break indent
 vim.o.breakindent = true
--- FIXME
 
 -- show tabs / nbsp / trailing spaces
 -- set list listchars=nbsp:¤,tab:··,trail:¤,extends:▶,precedes:◀
--- FIXME TODO
+-- FIXME:
 vim.o.listchars = 'nbsp:¤,tab:··,trail:¤,extends:▶,precedes:◀'
 
--- Highlight specific words (FIXME TODO)
--- FIXME TODO
--- TODO
-
 -- regex are applied live in a buffer
--- FIXME TODO
+-- FIXME:
 vim.g.inccommand = 'split'
 
 --Save undo history
