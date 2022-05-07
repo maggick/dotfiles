@@ -17,3 +17,9 @@
 	gpgSign = true
 [gpg]
 	program = gpg
+
+[includIf "gitdir:~/go/src/github.com/BishopFox/"]
+  path = ~/documents/bf/.gitconfig
+
+[includIf "gitdir:~/tools/bishopfox/"]
+  path = ~/documents/bf/.gitconfig
