@@ -1,5 +1,4 @@
-" macros file (in test)
-
+" macros file
 
 " kill trailing whitespace!
 let @s = ':%s/\s\+$//'
