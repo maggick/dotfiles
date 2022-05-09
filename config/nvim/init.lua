@@ -101,7 +101,6 @@ end)
 
 require("nvim-lsp-installer").setup {}
 require("todo-comments").setup {
-  -- TODO: change config or patch font
   -- your configuration comes here
   -- or leave it empty to use the default settings
   -- refer to the configuration section below

@@ -71,7 +71,7 @@ URxvt*cursorBlink : false
 ! the “letterSpace” option is absolutely required to keep the text readable
 ! (problem: wide characters like ←→ might become unreadable… :-/)
 ! URxvt*letterSpace : -1
-URxvt*font : xft:Fira mono:size=10
+URxvt*font : xft:FiraCode Nerd Font Mono:size=10
 
 ! reclaim <Alt-s> and <Ctrl-Shift-*> shortcuts
 URxvt*searchable-scrollback: M-S-s
