@@ -75,9 +75,6 @@ require('packer').startup(function(use)
   use 'rhysd/committia.vim' -- better commit view
   use 'lervag/vimtex' -- latex support in vim
   use "williamboman/nvim-lsp-installer"
-  -- use 'numToStr/Comment.nvim' -- "gc" to comment visual regions/lines
-  -- use 'ludovicchabant/vim-gutentags' -- Automatic tags management
-  -- UI to select things (files, grep results, open buffers...)
   use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim' } }
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
   use 'sainnhe/sonokai' -- High Contrast & Vivid Color Scheme based on Monokai Pro
@@ -112,14 +109,10 @@ vim.o.hlsearch = false
 --Make line numbers default
 vim.wo.number = true
 
---Enable mouse mode
--- vim.o.mouse = 'a'
-
 --Enable break indent
 vim.o.breakindent = true
 
--- show tabs / nbsp / trailing spaces
--- set list listchars=nbsp:¤,tab:··,trail:¤,extends:▶,precedes:◀
+--Show tabs / nbsp / trailing spaces
 vim.opt.list = true
 vim.opt.listchars = {nbsp='¤',tab='··',trail='¤',extends='▶',precedes='◀'}
 
@@ -143,7 +136,7 @@ vim.g.sonokai_style = 'atlantis'
 vim.g.sonokai_better_performance = 1
 vim.cmd [[colorscheme sonokai]]
 
--- Set completeopt to have a better completion experience
+--Set completeopt to have a better completion experience
 vim.o.completeopt = 'menuone,noselect'
 
 --Set statusbar
@@ -156,9 +149,7 @@ require('lualine').setup {
   },
 }
 
---Enable Comment.nvim
--- require('Comment').setup()
-
+--Escape insertion mode with 'kj'
 vim.keymap.set({ 'i' }, 'kj', '<Esc>')
 
 --Remap space as leader key
