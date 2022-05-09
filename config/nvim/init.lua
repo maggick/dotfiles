@@ -120,8 +120,8 @@ vim.o.breakindent = true
 
 -- show tabs / nbsp / trailing spaces
 -- set list listchars=nbsp:¤,tab:··,trail:¤,extends:▶,precedes:◀
--- FIXME:
-vim.o.listchars = 'nbsp:¤,tab:··,trail:¤,extends:▶,precedes:◀'
+vim.opt.list = true
+vim.opt.listchars = {nbsp='¤',tab='··',trail='¤',extends='▶',precedes='◀'}
 
 -- regex are applied live in a buffer
 vim.opt.inccommand = 'split'
