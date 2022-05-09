@@ -124,8 +124,7 @@ vim.o.breakindent = true
 vim.o.listchars = 'nbsp:¤,tab:··,trail:¤,extends:▶,precedes:◀'
 
 -- regex are applied live in a buffer
--- FIXME:
-vim.g.inccommand = 'split'
+vim.opt.inccommand = 'split'
 
 --Save undo history
 vim.opt.undofile = true
