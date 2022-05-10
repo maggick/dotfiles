@@ -92,15 +92,13 @@ require('packer').startup(function(use)
   use 'hrsh7th/cmp-nvim-lsp'
   use 'saadparwaiz1/cmp_luasnip'
   use 'L3MON4D3/LuaSnip' -- Snippets plugin
-
   use { "folke/todo-comments.nvim", requires = "nvim-lua/plenary.nvim" } -- highlight specific keywords
 end)
 
 require("nvim-lsp-installer").setup {}
 require("todo-comments").setup {
-  -- your configuration comes here
-  -- or leave it empty to use the default settings
-  -- refer to the configuration section below
+  pattern = [[\b(KEYWORDS)\b]], -- match without the extra colon.
+  highlight = { pattern = [[.*<(KEYWORDS)\s*]]}
 }
 
 --Set highlight on search
