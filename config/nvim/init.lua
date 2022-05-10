@@ -161,6 +161,9 @@ require('lualine').setup {
 --Escape insertion mode with 'kj'
 vim.keymap.set({ 'i' }, 'kj', '<Esc>')
 
+--load macros file
+vim.cmd 'source ~/dotfiles/config/nvim/macros.vim'
+
 --Remap space as leader key
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 vim.g.mapleader = ' '
