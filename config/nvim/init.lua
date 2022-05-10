@@ -24,12 +24,12 @@ if fn.empty(fn.glob(install_path)) > 0 then
 end
 
 -- Autocommand that reloads neovim whenever you save the init.lua file
---vim.cmd [[
---  augroup packer_user_config
---    autocmd!
---    autocmd BufWritePost init.lua source <afile> | PackerSync
---  augroup end
---]]
+vim.cmd [[
+  augroup packer_user_config
+    autocmd!
+    autocmd BufWritePost init.lua source <afile> | PackerSync
+  augroup end
+]]
 
 -- reopening a file at the same place than last time
 vim.cmd [[
