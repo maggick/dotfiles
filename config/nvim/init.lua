@@ -106,6 +106,9 @@ require("todo-comments").setup {
 --Set highlight on search
 vim.o.hlsearch = false
 
+--Set the number of lines to always display
+vim.o.scrolloff = 9
+
 --Make line numbers default
 vim.wo.number = true
 
