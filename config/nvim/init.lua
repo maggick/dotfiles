@@ -106,6 +106,12 @@ require("todo-comments").setup {
 --Set highlight on search
 vim.o.hlsearch = false
 
+--Use 2 spaces instead of tabs
+vim.o.tabstop=2
+vim.o.shiftwidth=2
+vim.o.softtabstop=2
+vim.o.expandtab=true
+
 --Set the number of lines to always display
 vim.o.scrolloff = 9
 
