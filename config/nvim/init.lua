@@ -86,6 +86,8 @@ require('packer').startup(function(use)
   use { 'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' } }
   -- Highlight, edit, and navigate code using a fast incremental parsing library
   use 'nvim-treesitter/nvim-treesitter'
+  -- A file explorer tree for neovim written in lua
+  use { 'kyazdani42/nvim-tree.lua', requires = { 'kyazdani42/nvim-web-devicons' }}
   -- Additional textobjects for treesitter
   use 'nvim-treesitter/nvim-treesitter-textobjects'
   use 'neovim/nvim-lspconfig' -- Collection of configurations for built-in LSP client
@@ -97,6 +99,8 @@ require('packer').startup(function(use)
 end)
 
 require("nvim-lsp-installer").setup {}
+require'nvim-tree'.setup {
+}
 require("todo-comments").setup {
   pattern = [[\b(KEYWORDS)\b]], -- match without the extra colon.
   highlight = { pattern = [[.*<(KEYWORDS)\s*]]}
