@@ -203,6 +203,9 @@ require('gitsigns').setup {
   },
 }
 
+--NVimtree shortcuts
+vim.keymap.set('n', '<leader>t',require('nvim-tree').toggle)
+
 -- Telescope
 require('telescope').setup {
   defaults = {
