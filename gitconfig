@@ -18,8 +18,8 @@
 [gpg]
 	program = gpg
 
-[includIf "gitdir:~/go/src/github.com/BishopFox/"]
+[includeIf "gitdir:~/go/src/github.com/BishopFox/"]
   path = ~/documents/bf/.gitconfig
 
-[includIf "gitdir:~/tools/bishopfox/"]
+[includeIf "gitdir:~/tools/bishopfox/"]
   path = ~/documents/bf/.gitconfig
