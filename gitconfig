@@ -5,20 +5,20 @@
 [user]
   name = maggick
   email = maggick@users.noreply.github.com
-	signingkey = 05BAF4954F71093809CBD7319CA1D703CDBC35B1
+  signingkey = 05BAF4954F71093809CBD7319CA1D703CDBC35B1
 [alias]
-   ci = commit
-   co = checkout
-   st = status
-   br = branch
+  ci = commit
+  co = checkout
+  st = status
+  br = branch
 [http]
-	sslVerify = true
+  sslVerify = true
 [commit]
-	gpgSign = true
+  gpgSign = true
 [gpg]
-	program = gpg
+  program = gpg
 [init]
-	defaultBranch = main
+  defaultBranch = main
 
 [includeIf "gitdir:~/go/src/github.com/BishopFox/"]
   path = ~/documents/bf/.gitconfig
