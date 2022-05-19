@@ -29,18 +29,14 @@ command=~/.config/i3blocks/$BLOCK_NAME/$BLOCK_NAME
 separator_block_width=10
 markup=none
 
-[cmus]
-label=
-markup=pango
-interval=10
-
+# https://github.com/firatakandere/i3blocks-spotify
+# rename spotify.py to spotify
 [spotify]
 label=
 color=#81b71a
 interval=5
 
 [timew]
-command=python3 ~/.config/i3blocks/timew/timew.py
 interval=10
 signal=10
 
@@ -101,7 +97,6 @@ align=center
 interval=once
 signal=10
 align=center
-
 
 #time paris/phoenix
 [time]
