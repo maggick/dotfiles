@@ -3,3 +3,4 @@ python3 -m venv ./venv && source ./venv/bin/activate
 openssl rand -base64 12
 sudo mount -t cifs -o user=matt,iocharset=utf8,noperm,vers=2.0 //192.168.1.100/media ~/documents/nas/media/
 convert -density 150 -fill "rgba(255,0,0,0.25)" -gravity center -pointsize 80 -draw "rotate -45 text 0,0 \"XXX 01.2022\"" RIB.pdf RIB_2.pdf
+for i in ./**.jpg; do ! [ -f "${i%.jpg}.cr2" ] && rm "$i"; done  # remove all jpg without a corresponding raw
