@@ -1,3 +1,5 @@
+[core]
+  pager=delta
 [color]
   diff = auto
   status = auto
@@ -16,7 +18,7 @@
 [commit]
   gpgSign = true
 [gpg]
-  program = gpg
+	program = gpg
 [init]
   defaultBranch = main
 
