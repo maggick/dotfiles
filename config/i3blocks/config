@@ -98,6 +98,13 @@ interval=once
 signal=10
 align=center
 
+# wheater, a few change to the script:
+# remove u\& in the curl command to get Celcius
+# change anchor value to 'south'
+#[rofi-wttr]
+#interval=3600
+#BAR_POSITION=bottom
+
 #time paris/phoenix
 [time]
 interval=30
