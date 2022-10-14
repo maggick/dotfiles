@@ -90,6 +90,7 @@ require('packer').startup(function(use)
   use { 'kyazdani42/nvim-tree.lua', requires = { 'kyazdani42/nvim-web-devicons' }}
   -- Additional textobjects for treesitter
   use 'nvim-treesitter/nvim-treesitter-textobjects'
+  use 'nvim-treesitter/nvim-treesitter-context'
   use 'neovim/nvim-lspconfig' -- Collection of configurations for built-in LSP client
   use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
   use 'hrsh7th/cmp-nvim-lsp'
@@ -106,6 +107,10 @@ require'nvim-tree'.setup {
 require("todo-comments").setup {
   pattern = [[\b(KEYWORDS)\b]], -- match without the extra colon.
   highlight = { pattern = [[.*<(KEYWORDS)\s*]]}
+}
+
+require'treesitter-context'.setup{
+    enable = true, -- Enable this plugin (Can be enabled/disabled later via commands)
 }
 
 vim.g.vimtex_view_method = 'zathura'
