@@ -106,6 +106,8 @@ require("todo-comments").setup {
   highlight = { pattern = [[.*<(KEYWORDS)\s*]]}
 }
 
+vim.g.vimtex_view_method = 'zathura'
+
 --Set highlight on search
 vim.o.hlsearch = false
 
