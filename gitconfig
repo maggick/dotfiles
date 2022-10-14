@@ -1,5 +1,8 @@
 [core]
   pager=delta
+[delta]
+    line-numbers = true
+    zero-style = dim syntax
 [color]
   diff = auto
   status = auto
