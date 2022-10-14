@@ -85,7 +85,7 @@ require('packer').startup(function(use)
   -- Add git related info in the signs columns and popups
   use { 'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' } }
   -- Highlight, edit, and navigate code using a fast incremental parsing library
-  use 'nvim-treesitter/nvim-treesitter'
+  use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   -- A file explorer tree for neovim written in lua
   use { 'kyazdani42/nvim-tree.lua', requires = { 'kyazdani42/nvim-web-devicons' }}
   -- Additional textobjects for treesitter
