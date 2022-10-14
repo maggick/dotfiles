@@ -164,7 +164,11 @@ require('lualine').setup {
 }
 
 --Escape insertion mode with 'kj'
-vim.keymap.set({ 'i' }, 'kj', '<Esc>')
+vim.keymap.set('i', 'kj', '<Esc>')
+
+-- auto select last selection when indenting
+vim.keymap.set('v', '>', '>gv')
+vim.keymap.set('v', '<', '<gv')
 
 --load macros file
 vim.cmd 'source ~/dotfiles/config/nvim/macros.vim'
