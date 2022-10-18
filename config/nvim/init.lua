@@ -124,6 +124,10 @@ vim.o.shiftwidth=2
 vim.o.softtabstop=2
 vim.o.expandtab=true
 
+-- colorcolumn
+vim.opt.textwidth=100
+vim.opt.colorcolumn='+0'
+
 --Set the number of lines to always display
 vim.o.scrolloff = 9
 
