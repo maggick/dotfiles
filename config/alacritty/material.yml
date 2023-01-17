@@ -1,0 +1,41 @@
+ # Colors (Material Theme)
+schema:
+  # Default colors
+  material_light: &light
+    primary:
+      background: '#fafafa'
+      foreground: '#90A4AE'
+
+    # Normal colors
+    normal:
+      white: '#FFFFFF'
+      black: '#000000'
+      red: '#E53935'
+      orange: '#F76D47'
+      yellow: '#E2931D'
+      green: '#91B859'
+      cyan: '#39ADB5'
+      blue: '#6182B8'
+      paleblue: '#8796B0'
+      purple: '#9C3EDA'
+      brown: '#916b53'
+      magenta: '#FF5370'
+      violet: '#945EB8'
+
+  material_dark: &dark
+    primary:
+      background: '#263238'
+      foreground: '#eeffff'
+
+    # Normal colors
+    normal:
+      black:   '#000000'  # Arbitrary
+      red:     '#ff5370'
+      green:   '#c3e88d'
+      yellow:  '#ffcb6b'
+      blue:    '#82aaff'
+      magenta: '#f07178'  # Pink of the original material theme
+      cyan:    '#89ddff'
+      white:   '#ffffff'  # Arbitrary
+
+colors: *dark
