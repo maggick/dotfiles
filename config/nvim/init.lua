@@ -78,7 +78,6 @@ require('packer').startup(function(use)
   use "williamboman/nvim-lsp-installer"
   use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim' } }
   use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
-  use 'sainnhe/sonokai' -- High Contrast & Vivid Color Scheme based on Monokai Pro
   use 'nvim-lualine/lualine.nvim' -- Fancier statusline
   -- Add indentation guides even on blank lines
   use 'lukas-reineke/indent-blankline.nvim'
@@ -156,9 +155,8 @@ vim.wo.signcolumn = 'yes'
 
 --Set colorscheme
 vim.o.termguicolors = true
-vim.g.sonokai_style = 'atlantis'
-vim.g.sonokai_better_performance = 1
-vim.cmd [[colorscheme sonokai]]
+vim.g.material_theme_style = 'default'
+vim.cmd [[colorscheme material]]
 
 --Set completeopt to have a better completion experience
 vim.o.completeopt = 'menuone,noselect'
@@ -166,10 +164,7 @@ vim.o.completeopt = 'menuone,noselect'
 --Set statusbar
 require('lualine').setup {
   options = {
-    icons_enabled = false,
-    theme = 'sonokai',
-    component_separators = '|',
-    section_separators = '',
+    theme = require('material.lualine'),
   },
 }
 
