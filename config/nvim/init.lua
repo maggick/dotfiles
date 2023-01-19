@@ -97,6 +97,7 @@ require('packer').startup(function(use)
   use 'L3MON4D3/LuaSnip' -- Snippets plugin
   use { "folke/todo-comments.nvim", requires = "nvim-lua/plenary.nvim" } -- highlight specific keywords
   use 'mhinz/vim-startify' -- The fancy start screen for Vim.
+  use 'kaicataldo/material.vim' -- material theme
 end)
 
 require("nvim-lsp-installer").setup {}
