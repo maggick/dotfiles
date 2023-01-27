@@ -89,7 +89,7 @@ require('packer').startup(function(use)
   use { 'kyazdani42/nvim-tree.lua', requires = { 'kyazdani42/nvim-web-devicons' }}
   -- Additional textobjects for treesitter
   use 'nvim-treesitter/nvim-treesitter-textobjects'
-  use 'nvim-treesitter/nvim-treesitter-context'
+  use 'nvim-treesitter/nvim-treesitter-context' -- highlight for everything
   use 'neovim/nvim-lspconfig' -- Collection of configurations for built-in LSP client
   use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
   use 'hrsh7th/cmp-nvim-lsp'
@@ -97,7 +97,10 @@ require('packer').startup(function(use)
   use 'L3MON4D3/LuaSnip' -- Snippets plugin
   use { "folke/todo-comments.nvim", requires = "nvim-lua/plenary.nvim" } -- highlight specific keywords
   use 'mhinz/vim-startify' -- The fancy start screen for Vim.
-  use 'kaicataldo/material.vim' -- material theme
+  use { "catppuccin/nvim", as = "catppuccin" } -- theme
+  use({ "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+})
 end)
 
 require("nvim-lsp-installer").setup {}
@@ -156,8 +159,7 @@ vim.wo.signcolumn = 'yes'
 
 --Set colorscheme
 vim.o.termguicolors = true
-vim.g.material_theme_style = 'default'
-vim.cmd [[colorscheme material]]
+vim.cmd.colorscheme "catppuccin-frappe"
 
 --Set completeopt to have a better completion experience
 vim.o.completeopt = 'menuone,noselect'
@@ -165,7 +167,7 @@ vim.o.completeopt = 'menuone,noselect'
 --Set statusbar
 require('lualine').setup {
   options = {
-    theme = require('material.lualine'),
+    theme = 'auto',
   },
 }
 
