@@ -3,6 +3,8 @@
 [delta]
     line-numbers = true
     zero-style = dim syntax
+[diff]
+  external = difft
 [color]
   diff = auto
   status = auto
