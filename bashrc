@@ -38,7 +38,6 @@ shopt -s checkwinsize
 # Alias Listing
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
-    alias ls='ls --color=auto'
     alias la='ls -A'
     alias ll='ls -lArth'
     alias lr='ranger'
@@ -52,6 +51,7 @@ if [ -x /usr/bin/dircolors ]; then
 
     alias df='pydf'
 fi
+alias ls='lsd'
 
 # Alias security
 alias cp='cp -ip'
