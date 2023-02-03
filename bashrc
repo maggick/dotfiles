@@ -67,7 +67,7 @@ alias tmux='tmux -2'
 alias vim='nvim'
 
 # layout
-alias lafayette='xkbcomp -w9 ~/dotfiles/lafayette.xkb $DISPLAY'
+alias lafayette='setxkbmap fr -variant lafayette'
 
 # linux command keeper
 alias keep='echo $(history -p !!) >>~/dotfiles/bash_keeper.txt'
