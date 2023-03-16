@@ -170,6 +170,10 @@ require('lualine').setup {
   },
 }
 
+--copy from vim
+vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
+vim.keymap.set("n", "<leader>Y", [["+Y]])
+
 --Escape insertion mode with 'kj'
 vim.keymap.set('i', 'kj', '<Esc>')
 
