@@ -22,7 +22,7 @@
 #
 
 SCM_NONE_CHAR=''
-SCM_THEME_PROMPT_DIRTY=" ${_omb_prompt_brown}X"
+SCM_THEME_PROMPT_DIRTY=" ${_omb_prompt_brown}✗"
 SCM_THEME_PROMPT_CLEAN=""
 SCM_THEME_PROMPT_PREFIX="${_omb_prompt_green}|"
 SCM_THEME_PROMPT_SUFFIX="${_omb_prompt_green}|"
