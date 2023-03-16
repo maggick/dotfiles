@@ -86,7 +86,7 @@ require('packer').startup(function(use)
   -- Highlight, edit, and navigate code using a fast incremental parsing library
   use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' }
   -- A file explorer tree for neovim written in lua
-  use { 'kyazdani42/nvim-tree.lua', requires = { 'kyazdani42/nvim-web-devicons' }}
+  use { 'nvim-tree/nvim-tree.lua', requires = { 'nvim-tree/nvim-web-devicons' }}
   -- Additional textobjects for treesitter
   use 'nvim-treesitter/nvim-treesitter-textobjects'
   use 'nvim-treesitter/nvim-treesitter-context' -- highlight for everything
@@ -104,8 +104,7 @@ require('packer').startup(function(use)
 end)
 
 require("nvim-lsp-installer").setup {}
-require'nvim-tree'.setup {
-}
+require'nvim-tree'.setup()
 require("todo-comments").setup {
   pattern = [[\b(KEYWORDS)\b]], -- match without the extra colon.
   highlight = { pattern = [[.*<(KEYWORDS)\s*]]}
@@ -218,7 +217,8 @@ require('gitsigns').setup {
 }
 
 --NVimtree shortcuts
-vim.keymap.set('n', '<leader>t',require('nvim-tree').toggle)
+local api = require("nvim-tree.api")
+vim.keymap.set('n', '<leader>t',api.tree.toggle)
 
 -- Telescope
 require('telescope').setup {
