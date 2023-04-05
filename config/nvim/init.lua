@@ -338,7 +338,7 @@ end
 -- nvim-cmp supports additional completion capabilities
 -- Enable the following language servers
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
-local servers = { 'bashls', 'kotlin_language_server', 'clangd', 'dockerls', 'dartls', 'gopls', 'jdtls', 'pyright', 'rust_analyzer', 'texlab', 'tsserver' }
+local servers = { 'bashls', 'kotlin_language_server', 'clangd', 'dockerls', 'dartls', 'gopls', 'jdtls', 'ltex', 'pyright', 'rust_analyzer', 'texlab', 'tsserver' }
 for _, lsp in ipairs(servers) do
   require('lspconfig')[lsp].setup {
     capabilities = capabilities
