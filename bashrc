@@ -12,28 +12,30 @@
 [ -z "$PS1" ] && return
 
 # Path to your oh-my-bash installation.
-export OSH=/home/maggick/.oh-my-bash
-OSH_THEME="font"
-OMB_USE_SUDO=true
-completions=(
-  git
-  composer
-  ssh
-)
-aliases=(
-)
-plugins=(
-  git
-  bashmarks
-)
-source "$OSH"/oh-my-bash.sh
+#export OSH=/home/maggick/.oh-my-bash
+#OSH_THEME="font"
+#OMB_USE_SUDO=true
+#completions=(
+#  git
+#  composer
+#  ssh
+#)
+#aliases=(
+#)
+#plugins=(
+#  git
+#  bashmarks
+#)
+#source "$OSH"/oh-my-bash.sh
 
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
-if [ -f /etc/bash_completion ]; then
-    . /etc/bash_completion
-fi
+#if [ -f /etc/bash_completion ]; then
+    #. /etc/bash_completion
+#fi
+eval "$(starship init bash)"
+
 
 # History configuration
 # don't put duplicate lines in the history. See bash(1) for more options  or
