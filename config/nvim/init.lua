@@ -98,6 +98,7 @@ require('packer').startup(function(use)
   use { "folke/todo-comments.nvim", requires = "nvim-lua/plenary.nvim" } -- highlight specific keywords
   use 'mhinz/vim-startify' -- The fancy start screen for Vim.
   use { "catppuccin/nvim", as = "catppuccin" } -- theme
+  use "tpope/vim-dispatch" -- build asynchronlsy with :Make
   use({ "iamcco/markdown-preview.nvim",
     run = function() vim.fn["mkdp#util#install"]() end,
 })
