@@ -1,0 +1,80 @@
+local fn = vim.fn
+-- Automatically install packer
+local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
+if fn.empty(fn.glob(install_path)) > 0 then
+  PACKER_BOOTSTRAP = fn.system {
+    "git",
+    "clone",
+    "--depth",
+    "1",
+    "https://github.com/wbthomason/packer.nvim",
+    install_path,
+  }
+  print "Installing packer close and reopen Neovim..."
+  vim.cmd [[packadd packer.nvim]]
+end
+
+-- Use a protected call so we don't error out on first use
+local status_ok, packer = pcall(require, "packer")
+if not status_ok then
+  return
+end
+-- Have packer use a popup window
+packer.init {
+  display = {
+    open_fn = function()
+      return require("packer.util").float { border = "rounded" }
+    end,
+  },
+}
+vim.cmd [[packadd packer.nvim]]
+
+-- Install the plugins
+require('packer').startup(function(use)
+  use 'wbthomason/packer.nvim' -- Package manager
+  use 'tpope/vim-fugitive' -- Git commands in nvim
+  use {
+    'vimwiki/vimwiki',  -- wiki plugin
+    config = function()
+        vim.g.vimwiki_list = {
+            {
+                path = '/home/maggick/documents/perso/vimwiki/',
+                syntax = 'markdown',
+                ext = '.md',
+            }
+        }
+      vim.g.vimwiki_global_ext = 0 -- disable the creation of temporary wikis
+    end
+  }
+  use 'godlygeek/tabular' -- make table
+  use 'mboughaba/i3config.vim' -- i3config syntax
+  use 'rhysd/committia.vim' -- better commit view
+  use 'lervag/vimtex' -- latex support in vim
+  use "williamboman/nvim-lsp-installer"
+  use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim' } }
+  use { 'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+  use { 'nvim-lualine/lualine.nvim',
+    requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+  }
+  use 'lukas-reineke/indent-blankline.nvim' -- Add indentation guides even on blank lines
+  use { 'lewis6991/gitsigns.nvim', requires = { 'nvim-lua/plenary.nvim' } } -- Add git related info in the signs columns and popups
+  use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate' } -- Highlight, edit, and navigate code using a fast incremental parsing library
+  use { 'nvim-tree/nvim-tree.lua', requires = { 'nvim-tree/nvim-web-devicons' }} -- A file explorer tree for neovim written in lua
+  use 'nvim-treesitter/nvim-treesitter-textobjects' -- Additional textobjects for treesitter
+  use 'nvim-treesitter/nvim-treesitter-context' -- highlight for everything
+  use 'neovim/nvim-lspconfig' -- Collection of configurations for built-in LSP client
+  use 'hrsh7th/nvim-cmp' -- Autocompletion plugin
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'saadparwaiz1/cmp_luasnip'
+  use 'L3MON4D3/LuaSnip' -- Snippets plugin
+  use { "folke/todo-comments.nvim", requires = "nvim-lua/plenary.nvim" } -- highlight specific keywords
+  use 'mhinz/vim-startify' -- The fancy start screen for Vim.
+  use { "catppuccin/nvim", as = "catppuccin" } -- theme
+  use "tpope/vim-dispatch" -- build asynchronlsy with :Make
+  use({ "iamcco/markdown-preview.nvim",
+    run = function() vim.fn["mkdp#util#install"]() end,
+})
+  use 'epwalsh/obsidian.nvim'
+end)
+
+
