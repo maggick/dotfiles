@@ -6,20 +6,12 @@
 --| Created  : the 13 december 2015
 --|
 
+require("config.remap")
 require("config.set")
 require("config.plugin")
-require("config.remap")
 
 --load macros file
 vim.cmd 'source ~/dotfiles/config/nvim/macros.vim'
-
--- Autocommand that reloads neovim whenever you save the init.lua file
-vim.cmd [[
-  augroup packer_user_config
-    autocmd!
-    autocmd BufWritePost init.lua source <afile> | PackerSync
-  augroup end
-]]
 
 -- reopening a file at the same place than last time
 vim.cmd [[
