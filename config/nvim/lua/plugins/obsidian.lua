@@ -1,4 +1,6 @@
-require("obsidian").setup({
+return{
+  "epwalsh/obsidian.nvim",
+  dependencies = { "nvim-lua/plenary.nvim", "hrsh7th/nvim-cmp", "nvim-telescope/telescope.nvim", "godlygeek/tabular", "preservim/vim-markdown" },
   lazy = true,
   event = { "BufReadPre " .. vim.fn.expand "~" .. "/Obsidian Vault/**.md" },
   opts = {
@@ -71,6 +73,4 @@ require("obsidian").setup({
       end
     end, { noremap = false, expr = true })
   end,
-
   }
-)
