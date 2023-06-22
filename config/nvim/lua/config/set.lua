@@ -8,6 +8,8 @@ vim.opt.softtabstop = 2
 vim.opt.shiftwidth = 2
 vim.opt.expandtab = true
 
+vim.opt.foldenable = false
+
 vim.opt.smartindent = true
 
 vim.opt.wrap = false
@@ -45,4 +47,3 @@ vim.o.ignorecase = true
 vim.o.smartcase = true
 
 vim.o.completeopt = 'menuone,noselect'
-
