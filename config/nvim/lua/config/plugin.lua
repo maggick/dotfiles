@@ -38,8 +38,10 @@ local plugins = {
   { "catppuccin/nvim", name = "catppuccin" }, -- theme
   "tpope/vim-dispatch", -- build asynchronlsy with :Make
   { "iamcco/markdown-preview.nvim", build = function() vim.fn["mkdp#util#install"]() end, },
-  'epwalsh/obsidian.nvim',
-  'williamboman/mason.nvim'
+  'williamboman/mason.nvim',
+
+  {
+  "epwalsh/obsidian.nvim", dependencies = { "nvim-lua/plenary.nvim", "hrsh7th/nvim-cmp", "nvim-telescope/telescope.nvim", "godlygeek/tabular", "preservim/vim-markdown" } }
 }
 
 local opts = {}
