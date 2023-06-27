@@ -6,7 +6,6 @@ return {
   'mboughaba/i3config.vim', -- i3config syntax
   'rhysd/committia.vim', -- better commit view
   'lervag/vimtex', -- latex support in vim
-  "williamboman/nvim-lsp-installer",
   { 'nvim-telescope/telescope.nvim', dependencies = { 'nvim-lua/plenary.nvim' }},
   { 'nvim-telescope/telescope-fzf-native.nvim', build = 'make' },
   { 'nvim-lualine/lualine.nvim', dependencies = { 'nvim-tree/nvim-web-devicons'}},
@@ -26,5 +25,6 @@ return {
   { "catppuccin/nvim", name = "catppuccin" }, -- theme
   "tpope/vim-dispatch", -- build asynchronlsy with :Make
   { "iamcco/markdown-preview.nvim", build = function() vim.fn["mkdp#util#install"]() end, },
+  'williamboman/mason-lspconfig.nvim',
   'williamboman/mason.nvim',
 }
