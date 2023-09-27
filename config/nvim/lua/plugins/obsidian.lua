@@ -2,7 +2,7 @@ return{
   "epwalsh/obsidian.nvim",
   dependencies = { "nvim-lua/plenary.nvim", "hrsh7th/nvim-cmp", "nvim-telescope/telescope.nvim", "godlygeek/tabular", "preservim/vim-markdown" },
   lazy = true,
-  event = { "BufReadPre " .. vim.fn.expand "~" .. "/Obsidian Vault/**.md" },
+  event = { "BufReadPre " .. vim.fn.expand "~" .. "/Ideaverse/**.md" },
   opts = {
     dir = "~/Obsidian Vault/",  -- no need to call 'vim.fn.expand' here
 
@@ -26,7 +26,8 @@ return{
           suffix = suffix .. string.char(math.random(65, 90))
         end
       end
-      return tostring(os.date('%Y-%m-%d')) .. "-" .. suffix
+      -- return tostring(os.date('%Y-%m-%d')) .. "-" .. suffix
+      return suffix
     end,
 
     -- Optional, set to true if you don't want Obsidian to manage frontmatter.
@@ -35,7 +36,7 @@ return{
     -- Optional, alternatively you can customize the frontmatter data.
     note_frontmatter_func = function(note)
       -- This is equivalent to the default frontmatter function.
-      local out = { id = note.id, aliases = note.aliases, tags = note.tags }
+      local out = { id = note.id, aliases = note.aliases, tags = note.tags, date = note.date }
       -- `note.metadata` contains any manually added fields in the frontmatter.
       -- So here we just make sure those fields are kept in the frontmatter.
       if note.metadata ~= nil and require("obsidian").util.table_length(note.metadata) > 0 then
