@@ -27,4 +27,5 @@ return {
   { "iamcco/markdown-preview.nvim", build = function() vim.fn["mkdp#util#install"]() end, },
   'williamboman/mason-lspconfig.nvim',
   'williamboman/mason.nvim',
+  'theRealCarneiro/hyprland-vim-syntax',
 }
