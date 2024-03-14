@@ -9,7 +9,7 @@
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces"],
     "modules-center": [],
-    "modules-right": ["custom/media", "pulseaudio", "disk", "network", "cpu", "memory", "temperature", "backlight", "battery", "clock", "tray", "custom/dunst"],
+    "modules-right": ["custom/media", "pulseaudio", "disk", "network", "cpu", "memory", "temperature", "backlight", "battery", "clock", "custom/dunst"],
 
     // Modules configuration
     "hyprland/workspaces": {
@@ -140,8 +140,8 @@
             "default": ""
         },
         "escape": true,
-        "exec": "$HOME/.config/waybar/mediaplayer.py --player spotifyd 2> /dev/null", // Filter player based on name
-        "on-click": "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotifyd.instance$(pgrep spotifyd) /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause",
+        "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null", // Filter player based on name
+        "on-click": "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause",
         "on-click-right": "playerctl next",
     },
     "custom/dunst": {

@@ -119,8 +119,11 @@ class PlayerManager:
         else:
             track_info = title
 
-        if len(track_info)>100:
-            track_info = track_info[:100]+"…"
+        try:
+            if len(track_info)>100:
+                track_info = track_info[:100]+"…"
+        except TypeError:
+            pass
 
         if track_info:
             if player.props.status == "Playing":
