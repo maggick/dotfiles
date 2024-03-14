@@ -21,3 +21,6 @@ alias keep='echo $(history -p !!) >>~/dotfiles/bash_keeper.txt' # linux command 
 export EDITOR=nvim
 export SUDO_EDITOR=vim
 #/usr/bin/rtx activate fish | source
+
+# testing zoxide
+zoxide init --cmd cd fish | source
