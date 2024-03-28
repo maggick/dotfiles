@@ -28,4 +28,5 @@ return {
   'williamboman/mason-lspconfig.nvim',
   'williamboman/mason.nvim',
   'theRealCarneiro/hyprland-vim-syntax',
+  "mpas/marp-nvim",
 }
