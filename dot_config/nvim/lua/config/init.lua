@@ -11,7 +11,7 @@ require("config.set")
 require("config.plugin")
 
 --load macros file
-vim.cmd 'source ~/dotfiles/config/nvim/macros.vim'
+vim.cmd 'source ~/.config/nvim/macros.vim'
 
 -- reopening a file at the same place than last time
 vim.cmd [[
