@@ -1,10 +1,11 @@
 [core]
   pager=delta
+[interactive]
+  diffFilter = delta --color-only
 [delta]
     line-numbers = true
     zero-style = dim syntax
-[diff]
-  external = difft
+  side-by-side = true
 [color]
   diff = auto
   status = auto
@@ -32,3 +33,7 @@
 
 [includeIf "gitdir:~/tools/bishopfox/"]
   path = ~/documents/bf/.gitconfig
+[includeIf "gitdir:~/tools/bf/"]
+  path = ~/documents/bf/.gitconfig
+[safe]
+	directory = /home/maggick/documents/nas/documents/matt/cv

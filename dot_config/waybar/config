@@ -13,6 +13,7 @@
 
     // Modules configuration
     "hyprland/workspaces": {
+      "output": "HDMI-A-1"
     //     "disable-scroll": true,
     //     "all-outputs": true,
     //     "warp-on-scroll": false,
@@ -133,7 +134,7 @@
         "on-click-right": "amixer set Capture toggle"
     },
     "custom/media": {
-        "format": "{icon} {}",
+        //"format": "{icon} {}",
         "return-type": "json",
         //"max-length": 40,
         "format-icons": {

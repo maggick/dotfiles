@@ -17,6 +17,12 @@ alias htop='btop'                                 # btop
 alias cat='bat'                                 # btop
 alias keep='echo $(history -p !!) >>~/dotfiles/bash_keeper.txt' # linux command keeper
 
+function gp
+  git add ./
+  git commit -m $argv
+  git push
+end
+
 #define the default editor as vim
 export EDITOR=nvim
 export SUDO_EDITOR=vim

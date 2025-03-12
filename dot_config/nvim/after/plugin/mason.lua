@@ -6,5 +6,5 @@ require("mason").setup {
     }
 }
 require("mason-lspconfig").setup {
-    ensure_installed = { 'bashls', 'kotlin_language_server', 'clangd', 'dockerls', 'jdtls', 'ltex', 'pyright', 'rust_analyzer', 'texlab', 'tailwindcss', 'tsserver'},
+    ensure_installed = { 'bashls', 'kotlin_language_server', 'clangd', 'dockerls', 'jdtls', 'ltex', 'pyright', 'rust_analyzer', 'texlab', 'tailwindcss', 'ts_ls'},
 }
