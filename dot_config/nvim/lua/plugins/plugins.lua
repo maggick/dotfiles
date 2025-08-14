@@ -29,4 +29,5 @@ return {
   'williamboman/mason.nvim',
   'theRealCarneiro/hyprland-vim-syntax',
   "mpas/marp-nvim",
+  { 'nvim-flutter/flutter-tools.nvim', lazy = false, dependencies = { 'nvim-lua/plenary.nvim', 'stevearc/dressing.nvim', }, config = true, }
 }
