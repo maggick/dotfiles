@@ -1,42 +1,16 @@
 [{
     "layer": "top", // Waybar at top layer
-    //"position": "bottom", // Waybar position (top|bottom|left|right)
     "exclusive": false,
-    //"height": 30, // Waybar height (to be removed for auto height)
-    // "width": 1280, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
 
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces"],
-    "modules-center": [],
+    "modules-center": ["window","hyprland/submap","hyprland/scratchpad" ],
     "modules-right": ["custom/media", "pulseaudio", "disk", "network", "cpu", "memory", "temperature", "backlight", "battery", "clock", "custom/dunst"],
 
     // Modules configuration
     "hyprland/workspaces": {
       "output": "HDMI-A-1"
-    //     "disable-scroll": true,
-    //     "all-outputs": true,
-    //     "warp-on-scroll": false,
-    //     "format": "{name}: {icon}",
-    //     "format-icons": {
-    //         "1": "",
-    //         "2": "",
-    //         "3": "",
-    //         "4": "",
-    //         "5": "",
-    //         "urgent": "",
-    //         "focused": "",
-    //         "default": ""
-    //     }
-    },
-    "keyboard-state": {
-        "numlock": true,
-        "capslock": true,
-        "format": "{name} {icon}",
-        "format-icons": {
-            "locked": "",
-            "unlocked": ""
-        }
     },
     "hyprland/submap": {
     "format": "✌️ {}",
@@ -73,7 +47,7 @@
         "tooltip": false
     },
     "memory": {
-        "format": " {used}/{total}G ({}%)"
+        //"format": " {used}/{total}G ({}%)"
     },
     "temperature": {
         // "thermal-zone": 2,
@@ -130,11 +104,11 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "amixer set Master toggle",
-        "on-click-right": "amixer set Capture toggle"
+        "on-click": "pactl set-sink-mute @DEFAULT_SINK@ toggle",
+        "on-click-right": "pactl set-source-mute 5 toggle"
     },
     "custom/media": {
-        //"format": "{icon} {}",
+        "format": "{0}",
         "return-type": "json",
         //"max-length": 40,
         "format-icons": {
