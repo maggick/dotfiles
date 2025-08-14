@@ -126,3 +126,5 @@ export PATH=$PATH:/opt/flutter/bin
 export CHROME_EXECUTABLE=/usr/bin/chromium
 
 export PATH="$PATH:/home/maggick/.bfrtk/bin"
+
+export PATH="$PATH:/home/maggick/.bfrtk/bin"
