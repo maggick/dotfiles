@@ -32,7 +32,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 })
 
 -- Parsers must be installed manually via :TSInstall
-require('nvim-treesitter.configs').setup {
+require('nvim-treesitter').setup {
   highlight = {
     enable = true, -- false will disable the whole extension
   },
@@ -84,7 +84,8 @@ require('nvim-treesitter.configs').setup {
 }
 
 -- LSP settings
-local lspconfig = require 'lspconfig'
+--local lspconfig = require 'lspconfig'
+local lspconfig = vim.lsp.config
 local on_attach = function(_, bufnr)
   local opts = { buffer = bufnr }
   vim.keymap.set('n', 'gD', vim.lsp.buf.declaration, opts)
@@ -109,11 +110,11 @@ end
 -- Enable the following language servers
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 local servers = { 'bashls', 'kotlin_language_server', 'clangd', 'dockerls', 'gopls', 'jdtls', 'ltex', 'pyright', 'rust_analyzer', 'texlab', 'ts_ls' }
-for _, lsp in ipairs(servers) do
-  require('lspconfig')[lsp].setup {
-    capabilities = capabilities
-  }
-end
+--for _, lsp in ipairs(servers) do
+  --require('lspconfig')[lsp].setup {
+    --capabilities = capabilities
+  --}
+--end
 
 -- luasnip setup
 local luasnip = require 'luasnip'

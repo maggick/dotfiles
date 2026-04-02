@@ -11,7 +11,7 @@ return {
   { 'nvim-lualine/lualine.nvim', dependencies = { 'nvim-tree/nvim-web-devicons'}},
   { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} }, -- Add indentation guides even on blank lines
   { 'lewis6991/gitsigns.nvim', dependencies = { 'nvim-lua/plenary.nvim' } } ,-- Add git related info in the signs columns and popups
-  {'nvim-treesitter/nvim-treesitter', build = ':TSUpdate' }, -- Highlight, edit, and navigate code using a fast incremental parsing library
+  {'nvim-treesitter/nvim-treesitter', lazy = false, build = ':TSUpdate' }, -- Highlight, edit, and navigate code using a fast incremental parsing library
   { 'nvim-tree/nvim-tree.lua', dependencies = { 'nvim-tree/nvim-web-devicons' }} ,-- A file explorer tree for neovim written in lua
   'nvim-treesitter/nvim-treesitter-textobjects', -- Additional textobjects for treesitter
   'nvim-treesitter/nvim-treesitter-context', -- highlight for everything
