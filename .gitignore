@@ -1,2 +1,3 @@
 *.swp
 .devcontainer/
+.config/nvim/lazy-lock.json
